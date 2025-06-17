@@ -1,0 +1,48 @@
+﻿@model QLCCCC.Models.DichVu
+<style>
+    .edit-apartment-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<div class="edit-apartment-container">
+    <h2>Thêm Dịch Vụ</h2>
+
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken() <!-- Thêm antiforgery token -->
+
+        <div class="mb-3">
+            <label class="form-label">Tên Dịch Vụ</label>
+            <input asp-for="TenDichVu" class="form-control" required />
+            <span asp-validation-for="TenDichVu" class="text-danger"></span> <!-- Hiển thị lỗi -->
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Mô Tả</label>
+            <textarea asp-for="MoTa" class="form-control"></textarea>
+            <span asp-validation-for="MoTa" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Giá</label>
+            <input asp-for="Gia" class="form-control" required />
+            <span asp-validation-for="Gia" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Hình Ảnh</label>
+            <input type="file" name="HinhAnhDichVu" class="form-control" />
+        </div>
+
+        <button type="submit" class="btn btn-success">Lưu</button>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </form>
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" /> <!-- Thêm script validation -->
+    }
+ </div>

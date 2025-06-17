@@ -1,0 +1,251 @@
+﻿@{
+    ViewData["Title"] = "Trang Chủ - QLCCCC";
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+</head>
+<body>
+    @await Component.InvokeAsync("Weather")
+    <div class="hero">
+        <h1 id="welcome-title">Chào mừng đến với APT - APARTMENT</h1>
+        <h2 class="slogan" id="slogan">Cùng nhau xây dựng một cộng đồng văn minh, hiện đại và gắn kết!</h2>
+    </div>
+
+    <!-- Tầm Nhìn và Sứ Mệnh -->
+    <div class="section vision-mission">
+        <div class="vision">
+            <i class="fas fa-eye icon"></i>
+            <h2>Tầm Nhìn</h2>
+            <p>
+                Chúng tôi hướng tới việc trở thành hệ thống quản lý chung cư hàng đầu tại Việt Nam, mang lại chất lượng sống tốt nhất cho cư dân và xây dựng một cộng đồng văn minh, hiện đại và gắn kết.
+            </p>
+        </div>
+        <div class="divider"></div>
+        <div class="mission">
+            <i class="fas fa-bullseye icon"></i>
+            <h2>Sứ Mệnh</h2>
+            <p>
+                Sứ mệnh của chúng tôi là cung cấp dịch vụ quản lý chung cư chất lượng cao, đáp ứng nhu cầu và mong đợi của cư dân. Chúng tôi cam kết xây dựng một môi trường sống an toàn, tiện nghi và thân thiện.
+            </p>
+        </div>
+    </div>
+
+    <div class="container content">
+        <!-- Giới thiệu về Hệ thống (Ảnh bên trái, Văn bản bên phải) -->
+        <div class="section row">
+            <div class="col-md-6 order-md-1">
+                <img src="https://nasaland.vn/wp-content/uploads/2021/11/Chung_cu_cao_cap_quan_4-.png" alt="Hình ảnh về Chung Cư" class="img-fluid">
+            </div>
+            <div class="col-md-6 order-md-2">
+                <h2><i class="fas fa-building icon"></i> Giới thiệu về Hệ thống Chung Cư</h2>
+                <p>
+                    Hệ thống Chung Cư toàn thành phố được phát triển với mục tiêu tạo ra một nền tảng quản lý toàn diện và hiệu quả cho cư dân và ban quản lý. Chúng tôi nhận thức rằng cuộc sống tại chung cư không chỉ đơn thuần là tìm kiếm một nơi ở, mà còn là xây dựng một cộng đồng gắn kết, nơi mọi người có thể tương tác, chia sẻ và hỗ trợ lẫn nhau.
+                </p>
+                <p>
+                    Với sự phát triển nhanh chóng của các khu chung cư tại thành phố, nhu cầu quản lý và duy trì chất lượng cuộc sống ngày càng trở nên quan trọng. Hệ thống của chúng tôi không chỉ giúp cư dân quản lý thông tin cá nhân mà còn cung cấp các công cụ cần thiết để tham gia vào các hoạt động cộng đồng.
+                </p>
+            </div>
+        </div>
+
+        <!-- Lịch Sử & Thành Tựu (Văn bản bên trái, Ảnh bên phải) -->
+        <div class="section row">
+            <div class="col-md-6 order-md-2">
+                <img src="https://nqs.1cdn.vn/2024/06/17/i.ex-cdn.com-chatluongvacuocsong.vn-files-content-2024-06-17-_9898uu-1442.jpeg" alt="Lịch Sử & Thành Tựu" class="img-fluid">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h2><i class="fas fa-trophy icon"></i> Lịch Sử & Thành Tựu</h2>
+                <p>
+                    Kể từ khi thành lập, chúng tôi đã không ngừng phát triển và mở rộng hệ thống quản lý chung cư. Một số thành tựu nổi bật bao gồm:
+                </p>
+                <ul>
+                    <li>Hoàn thành quản lý hơn 50 khu chung cư tại các thành phố lớn.</li>
+                    <li>Đạt giải thưởng "Dịch vụ khách hàng xuất sắc" vào năm 2023.</li>
+                    <li>Xây dựng cộng đồng cư dân với trên 10.000 thành viên tham gia các hoạt động văn hóa, thể thao.</li>
+                    <li>Được công nhận là một trong những đơn vị tiên phong trong việc ứng dụng công nghệ thông tin vào quản lý chung cư.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Dịch vụ nổi bật (Ảnh bên trái, Văn bản bên phải) -->
+        <div class="section row">
+            <div class="col-md-6 order-md-1">
+                <div class="row">
+                    <div class="col-6 mb-2">
+                        <img src="https://hungphatjsc.com.vn/wp-content/uploads/2019/11/male-asian-engineer-professional-having-discussion-standing-by-machine-factory-two-asian-coworker-brainstorm-explaining-solves-process-curcuit-mother-board-machine-1.jpg" alt="Dịch vụ bảo trì" class="img-fluid small-img">
+                    </div>
+                    <div class="col-6 mb-2">
+                        <img src="https://emergencyassistance.com.vn/wp-content/uploads/2021/07/home-slider-3-1024x439.jpg" alt="Hỗ trợ khẩn cấp" class="img-fluid small-img">
+                    </div>
+                    <div class="col-6 mb-2">
+                        <img src="https://vinhomesgpark.vn/wp-content/uploads/2024/11/dia-chi-vinwonders-grand-park3066223830037060393-847x800.jpg" alt="Chương trình sự kiện" class="img-fluid small-img">
+                    </div>
+                    <div class="col-6 mb-2">
+                        <img src="https://www.hfh.com.vn/sites/default/files/news/_HI10923_web.jpg" alt="Hỗ trợ y tế" class="img-fluid small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 order-md-2">
+                <h2><i class="fas fa-star icon"></i> Các Dịch Vụ Nổi Bật</h2>
+                <ul>
+                    <li><strong>Dịch vụ bảo trì:</strong> Hỗ trợ sửa chữa và bảo trì thiết bị trong căn hộ.</li>
+                    <li><strong>Hỗ trợ khẩn cấp:</strong> Dịch vụ 24/7 cho các tình huống khẩn cấp.</li>
+                    <li><strong>Chương trình sự kiện:</strong> Tổ chức sự kiện văn hóa, thể thao cho cư dân.</li>
+                    <li><strong>Dịch vụ tư vấn:</strong> Tư vấn luật pháp, tài chính liên quan đến chung cư.</li>
+                    <li><strong>Hỗ trợ y tế:</strong> Dịch vụ y tế tại nhà cho cư dân.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Ưu Đãi Khuyến Mãi (Văn bản bên trái, Ảnh bên phải) -->
+        <div class="section row">
+            <div class="col-md-6 order-md-2">
+                <img src="https://pfst.cf2.poecdn.net/base/image/51740b3c6ddd5b76d7a63de73fa3d2a0d1dd0054731796cee4b70807bcd71eca?w=1024&h=768&pmaid=328738033" alt="Ưu Đãi Khuyến Mãi" class="img-fluid">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h2><i class="fas fa-tags icon"></i> Ưu Đãi Khuyến Mãi</h2>
+                <p>Chúng tôi luôn có những ưu đãi hấp dẫn dành cho cư dân:</p>
+                <ul>
+                    <li>Giảm 30% phí quản lý cho tháng đầu tiên.</li>
+                    <li>Nhận quà tặng khi giới thiệu bạn bè đến thuê căn hộ.</li>
+                    <li>Chương trình giảm giá cho dịch vụ bảo trì trong tháng đầu tiên.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Các Sự Kiện (Ảnh bên trái, Văn bản bên phải) -->
+        <div class="section row">
+            <div class="col-md-6 order-md-1">
+                <div class="row">
+                    <div class="col-6 mb-2">
+                        <img src="https://nld.mediacdn.vn/291774122806476800/2024/5/26/tthn-1-17167172319651273671261.jpg" alt="Ngày hội cộng đồng" class="img-fluid small-img">
+                    </div>
+                    <div class="col-6 mb-2">
+                        <img src="https://baokhanhhoa.vn/file/e7837c02857c8ca30185a8c39b582c03/092024/dsc_0651_20240906222121_20240906223757.jpg" alt="Giải bóng đá chung cư" class="img-fluid small-img">
+                    </div>
+                    <div class="col-6 mb-2">
+                        <img src="https://andochine.com.vn/wp-content/uploads/Untitled-1-1024x682.png" alt="Buổi tiệc BBQ" class="img-fluid small-img">
+                    </div>
+                    <div class="col-6 mb-2">
+                        <img src="https://file.medinet.gov.vn/UploadImages/tytphuong5qgv/img5709_277201816.jpg" alt="Ngày dọn dẹp cộng đồng" class="img-fluid small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 order-md-2">
+                <h2><i class="fas fa-calendar-alt icon"></i> Các Sự Kiện</h2>
+                <p>
+                    Chúng tôi tự hào mang đến cho cư dân một loạt các sự kiện đa dạng và hấp dẫn, được thiết kế để gắn kết cộng đồng và nâng cao chất lượng cuộc sống tại chung cư. Từ những buổi giao lưu ấm cúng giúp bạn gặp gỡ, đến các giải đấu thể thao đầy kịch tính như bóng đá hay cầu lông, nơi bạn có thể thể hiện tinh thần đồng đội và sự năng động của mình. Những bữa tiệc ẩm thực độc đáo như tiệc BBQ ngoài trời sẽ là cơ hội để bạn thư giãn, thưởng thức các món ăn ngon và chia sẻ những câu chuyện thú vị cùng mọi người. Đặc biệt, chúng tôi còn tổ chức các hoạt động ý nghĩa như ngày dọn dẹp cộng đồng, khuyến khích cư dân cùng nhau giữ gìn môi trường sống sạch đẹp, tạo nên một không gian sống văn minh, hiện đại. Mỗi sự kiện đều được chuẩn bị kỹ lưỡng với mục tiêu mang lại niềm vui, sự kết nối và những kỷ niệm khó quên, giúp bạn cảm nhận rõ hơn giá trị của một cộng đồng đoàn kết và thân thiện tại APT - APARTMENT.
+                </p>
+            </div>
+        </div>
+
+        <!-- Cửa hàng tiện lợi và siêu thị (Văn bản bên trái, Ảnh bên phải) -->
+        <div class="section row">
+            <div class="col-md-6 order-md-2">
+                <div class="row">
+                    <div class="col-6 mb-2">
+                        <img src="https://i.pinimg.com/736x/6d/30/fe/6d30fe520baa0211cc9911ef625f9699.jpg" alt="Cửa hàng tiện lợi" class="img-fluid small-img">
+                    </div>
+                    <div class="col-6 mb-2">
+                        <img src="https://i.pinimg.com/736x/a8/cb/7d/a8cb7d38f2b0c1e6fe964ed20800b480.jpg" alt="Siêu thị" class="img-fluid small-img">
+                    </div>
+                    <div class="col-6 mb-2">
+                        <img src="https://vanchuyendh.com/wp-content/uploads/2024/01/giao-hang-nhanh-tu-sai-gon-ra-ha-noi-GHN.jpg" alt="Dịch vụ giao hàng" class="img-fluid small-img">
+                    </div>
+                    <div class="col-6 mb-2">
+                        <img src="https://i.pinimg.com/474x/e4/bc/23/e4bc232aaecf0b70c02257e169485db5.jpg" alt="Sản phẩm phong phú" class="img-fluid small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h2><i class="fas fa-shopping-cart icon"></i> Cửa Hàng Tiện Lợi và Siêu Thị</h2>
+                <p>
+                    Chúng tôi cung cấp các dịch vụ từ cửa hàng tiện lợi và siêu thị ngay trong khuôn viên chung cư. Cư dân có thể dễ dàng mua sắm các nhu yếu phẩm hàng ngày mà không cần phải đi xa.
+                </p>
+                <ul>
+                    <li><strong>Cửa hàng tiện lợi:</strong> Mở cửa 24/7 với đa dạng sản phẩm.</li>
+                    <li><strong>Siêu thị:</strong> Cung cấp thực phẩm tươi sống, đồ dùng gia đình và nhiều sản phẩm khác.</li>
+                    <li><strong>Quán coffee:</strong> Cung cấp nhiều loại cà phê, trà, đồ uống sinh tố, bàn ghế thoải mái để cư dân có thể làm việc hoặc học tập.</li>
+                    <li><strong>Dịch vụ giao hàng:</strong> Giao hàng tận nơi cho cư dân, tiết kiệm thời gian.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Đội Ngũ Quản Lý (Ảnh bên trái, Văn bản bên phải) -->
+        <div class="section row">
+            <div class="col-md-6 order-md-1">
+                <img src="https://apiweb.solenc.vn/public/1696081404312.jpg" alt="Đội Ngũ Quản Lý" class="img-fluid">
+            </div>
+            <div class="col-md-6 order-md-2">
+                <h2><i class="fas fa-users icon"></i> Đội Ngũ Quản Lý</h2>
+                <p>
+                    Đội ngũ quản lý của chúng tôi bao gồm các chuyên gia giàu kinh nghiệm trong lĩnh vực quản lý bất động sản và dịch vụ khách hàng. Với sự chuyên nghiệp và tận tâm, chúng tôi cam kết mang đến cho cư dân những dịch vụ chất lượng cao, đảm bảo một môi trường sống an toàn, tiện nghi và thân thiện. Đội ngũ luôn sẵn sàng hỗ trợ 24/7, từ việc duy trì cơ sở vật chất đến giải quyết các nhu cầu hàng ngày, nhằm nâng cao trải nghiệm sống tại APT - APARTMENT.
+                </p>
+            </div>
+        </div>
+
+        <!-- Kết nối cộng đồng (Văn bản bên trái, Ảnh bên phải) -->
+        <div class="section row">
+            <div class="col-md-6 order-md-2">
+                <img src="https://i.pinimg.com/736x/d1/88/41/d18841063a62f70ecfde52d4f45426a2.jpg" alt="Kết nối cộng đồng" class="img-fluid">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h2><i class="fas fa-handshake icon"></i> Kết Nối Cộng Đồng</h2>
+                <p>
+                    Chúng tôi tin rằng xây dựng mối quan hệ tốt giữa cư dân là rất quan trọng. Các buổi họp mặt, sự kiện văn hóa và hoạt động thể thao được tổ chức thường xuyên để cư dân giao lưu, kết nối, tạo nên một môi trường sống vui vẻ và thân thiện.
+                </p>
+                <p>
+                    Hãy khám phá và trải nghiệm những điều tuyệt vời mà hệ thống của chúng tôi mang lại, cùng nhau xây dựng một cộng đồng chung cư văn minh, hiện đại và gắn kết!
+                </p>
+            </div>
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        window.onload = function() {
+            const title = document.getElementById('welcome-title');
+            const slogan = document.querySelector('.slogan');
+            title.classList.add('show');
+            slogan.classList.add('show');
+
+            const sloganText = slogan.textContent;
+            slogan.textContent = '';
+            let index = 0;
+            let isDeleting = false;
+
+            function type() {
+                const currentText = sloganText.substring(0, index);
+                slogan.textContent = currentText;
+
+                if (!isDeleting) {
+                    index++;
+                    if (index === sloganText.length) {
+                        isDeleting = true;
+                        setTimeout(type, 500);
+                        return;
+                    }
+                } else {
+                    index--;
+                    if (index < 0) {
+                        isDeleting = false;
+                        setTimeout(type, 1000);
+                        return;
+                    }
+                }
+
+                setTimeout(type, isDeleting ? 50 : 100);
+            }
+
+            type();
+        };
+    </script>
+</body>
+</html>

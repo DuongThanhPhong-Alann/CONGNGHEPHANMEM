@@ -1,0 +1,108 @@
+﻿<style >
+body {
+    background-color: #eaf4fc; /* Nền sáng xanh nhạt */
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    margin-top: 30px;
+    max-width: 900px;
+}
+
+.details-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-name {
+    font-size: 2.5rem; /* Tăng kích thước chữ */
+    font-weight: 700; /* Làm chữ đậm hơn */
+    color: #1f78d1; /* Màu xanh dương đậm */
+    margin-bottom: 25px;
+    padding: 15px 30px; /* Tăng padding */
+    background: linear-gradient(135deg, #a6c8ff, #e1f0ff); /* Gradient nền xanh dương sáng */
+    border: 2px solid #1f78d1; /* Viền xanh dương đậm */
+    border-radius: 8px; /* Bo góc lớn hơn */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ */
+    display: inline-block;
+    transition: all 0.3s ease; /* Hiệu ứng mượt */
+}
+
+    .service-name:hover {
+        transform: translateY(-3px); /* Nhấc lên khi hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Tăng bóng đổ */
+        background: linear-gradient(135deg, #e1f0ff, #a6c8ff); /* Đổi chiều gradient */
+    }
+
+.image-gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+    .image-gallery img {
+        width: 100%; /* Phóng to hết chiều rộng */
+        max-width: 900px; /* Giới hạn tối đa bằng container */
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+    .image-gallery span {
+        font-size: 1rem;
+        color: #dc3545;
+        font-style: italic;
+    }
+
+.description-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f1faff;
+    border-radius: 5px;
+}
+
+    .description-section h4 {
+        font-size: 1.25rem;
+        color: #1f78d1;
+        margin-bottom: 10px;
+    }
+
+    .description-section p {
+        font-size: 1rem;
+        color: #555;
+        margin: 0;
+    }
+
+.action-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.btn-custom {
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary {
+    background-color: #3498db; /* Màu xanh dương nhạt */
+    border-color: #3498db;
+}
+
+    .btn-secondary:hover {
+        background-color: #2980b9; /* Màu xanh đậm hơn khi hover */
+        border-color: #2980b9;
+    }
+
+</style >

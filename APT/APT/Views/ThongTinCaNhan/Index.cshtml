@@ -1,0 +1,22 @@
+﻿@model QLCCCC.Models.NguoiDung
+
+<h2>Thông Tin Cá Nhân</h2>
+
+<table class="table">
+    <tr>
+        <th>Họ Tên:</th>
+        <td>@Model.HoTen</td>
+    </tr>
+    <tr>
+        <th>Email:</th>
+        <td>@Model.Email</td>
+    </tr>
+    <tr>
+        <th>Số Điện Thoại:</th>
+        <td>@Model.SoDienThoai</td>
+    </tr>
+    <tr>
+        <th>Loại Người Dùng:</th>
+        <td>@(Model.LoaiNguoiDung ?? "Chưa cập nhật")</td>
+    </tr>
+</table>

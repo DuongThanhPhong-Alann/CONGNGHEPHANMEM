@@ -1,0 +1,116 @@
+﻿<style >
+body {
+    background: linear-gradient(to right, #e3f2fd, #bbdefb); /* Gradient xanh nhạt */
+    font-family: 'Arial', sans-serif;
+    color: #0d47a1; /* Màu xanh navy đậm */
+}
+
+.container {
+    margin-top: 30px;
+    max-width: 1200px;
+}
+
+.header-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1565c0; /* Xanh dương nổi bật */
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.table-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+    transition: box-shadow 0.3s ease;
+}
+
+    .table-container:hover {
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.05);
+    }
+
+.btn-create {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #42a5f5, #1976d2); /* Gradient xanh */
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+    .btn-create:hover {
+        background: linear-gradient(135deg, #1976d2, #1565c0);
+        text-decoration: none;
+        color: #fff;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fff;
+    border: 1px solid #bbdefb;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .table thead th {
+        background: linear-gradient(135deg, #90caf9, #42a5f5);
+        color: #fff;
+        font-weight: 600;
+        padding: 15px;
+        text-align: left;
+        border-bottom: 2px solid #1976d2;
+    }
+
+    .table tbody td {
+        padding: 15px;
+        font-size: 1rem;
+        color: #0d47a1;
+        border-bottom: 1px solid #bbdefb;
+        background-color: #ffffff;
+        transition: background-color 0.3s ease;
+    }
+
+    .table tbody tr:last-child td {
+        border-bottom: none;
+    }
+
+    .table tbody tr:hover td {
+        background-color: #e3f2fd;
+    }
+
+.action-links a {
+    margin-right: 10px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+    .action-links a.edit {
+        color: #0288d1; /* xanh cyan đậm */
+    }
+
+        .action-links a.edit:hover {
+            color: #0277bd;
+            transform: translateY(-2px);
+        }
+
+    .action-links a.delete {
+        color: #c62828; /* đỏ cảnh báo */
+    }
+
+        .action-links a.delete:hover {
+            color: #e53935;
+            transform: translateY(-2px);
+        }
+
+</style >

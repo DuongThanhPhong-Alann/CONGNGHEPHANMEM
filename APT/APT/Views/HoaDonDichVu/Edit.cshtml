@@ -1,0 +1,122 @@
+﻿@model QLCCCC.Models.HoaDonDichVu
+<style>
+    .edit-apartment-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<div class="edit-apartment-container">
+<h2>Chỉnh sửa hóa đơn</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="ID" />
+
+    <div class="form-group">
+        <label>Chung cư</label>
+        <select asp-for="ID_ChungCu" class="form-control" required id="ID_ChungCu">
+            <option value="">-- Chọn Chung Cư --</option>
+            @foreach (var item in ViewBag.ChungCus)
+            {
+                <option value="@item.Value" selected="@(item.Value == Model.ID_ChungCu.ToString() ? "selected" : null)">@item.Text</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Căn hộ</label>
+        <select asp-for="ID_CanHo" class="form-control" required id="ID_CanHo">
+            <option value="">-- Chọn Căn Hộ --</option>
+            @foreach (var item in ViewBag.CanHos)
+            {
+                <option value="@item.Value" selected="@(item.Value == Model.ID_CanHo.ToString() ? "selected" : null)">@item.Text</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Dịch vụ</label>
+        @Html.ListBox("selectedDichVu", (MultiSelectList)ViewBag.DichVus, new { @class = "form-control", id = "selectedDichVu", multiple = "multiple" })
+    </div>
+
+    <div class="form-group">
+        <label>Ngày lập</label>
+        <input asp-for="NgayLap" type="date" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label>Số tiền</label>
+        <input asp-for="SoTien" type="text" class="form-control" required readonly id="SoTien" />
+    </div>
+
+    <div class="form-group">
+        <label>Trạng thái</label>
+        <select asp-for="TrangThai" class="form-control" required>
+            <option value="Chưa thanh toán" selected="@(Model.TrangThai == "Chưa thanh toán" ? "selected" : null)">Chưa thanh toán</option>
+            <option value="Đã thanh toán" selected="@(Model.TrangThai == "Đã thanh toán" ? "selected" : null)">Đã thanh toán</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-warning">Cập nhật</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Load danh sách căn hộ khi chọn chung cư
+        $('#ID_ChungCu').change(function () {
+            var chungCuId = $(this).val();
+            if (chungCuId) {
+                $.ajax({
+                    url: '/HoaDonDichVu/GetCanHoByChungCu',
+                    type: 'GET',
+                    data: { chungCuId: chungCuId },
+                    dataType: 'json',
+                    success: function (data) {
+                        $('#ID_CanHo').empty().append('<option value="">-- Chọn Căn Hộ --</option>');
+                        $.each(data, function (index, item) {
+                            $('#ID_CanHo').append('<option value="' + item.id + '">' + item.maCan + '</option>');
+                        });
+                    },
+                    error: function () {
+                        $('#ID_CanHo').empty().append('<option value="">Lỗi khi tải dữ liệu</option>');
+                    }
+                });
+            } else {
+                $('#ID_CanHo').empty().append('<option value="">Vui lòng chọn chung cư trước</option>');
+            }
+        });
+
+        // Cập nhật giá dịch vụ khi thay đổi lựa chọn
+        function updateTotalPrice() {
+            var selectedServices = $('#selectedDichVu').val(); // Lấy danh sách ID dịch vụ đã chọn
+            if (selectedServices.length > 0) {
+                $.ajax({
+                    url: '/HoaDonDichVu/GetGiaDichVu',
+                    type: 'GET',
+                    data: { selectedDichVu: selectedServices },
+                    traditional: true, // Để gửi mảng dữ liệu đúng cách
+                    success: function (totalPrice) {
+                        $('#SoTien').val(totalPrice.toLocaleString() + " VNĐ"); // Hiển thị giá đã format
+                    },
+                    error: function () {
+                        alert("Lỗi khi lấy giá dịch vụ");
+                    }
+                });
+            } else {
+                $('#SoTien').val("0 VNĐ");
+            }
+        }
+
+        // Gọi hàm khi thay đổi dịch vụ
+        $('#selectedDichVu').change(updateTotalPrice);
+
+        // Cập nhật giá ban đầu khi trang tải
+        updateTotalPrice();
+    });
+</script>
+</div>

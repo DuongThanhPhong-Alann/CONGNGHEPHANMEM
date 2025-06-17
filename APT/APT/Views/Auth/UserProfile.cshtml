@@ -1,0 +1,112 @@
+﻿@using QLCCCC.ViewModels
+@model UserProfileViewModel
+
+<style>
+    .profile-container {
+        max-width: 500px;
+        margin: 30px auto;
+        padding: 25px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        color: #1e3a8a; /* Xanh dương cho tiêu đề */
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .profile-info {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+        .profile-info p {
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .profile-info strong {
+            color: #555;
+            font-weight: 600;
+            width: 40%;
+        }
+
+        .profile-info span {
+            color: #333;
+            width: 60%;
+            text-align: right;
+        }
+
+    .no-info {
+        color: #888;
+        font-style: italic;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .btn-warning {
+        background-color: #1e3a8a; /* Xanh dương cho nút "Đổi mật khẩu" */
+        border: none;
+        padding: 10px 20px;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: background-color 0.3s;
+    }
+
+        .btn-warning:hover {
+            background-color: #0d2f6c; /* Xanh dương đậm khi hover */
+        }
+</style>
+
+<div class="profile-container">
+    <h2><i class="fas fa-user-circle"></i> Thông tin tài khoản</h2>
+    <div class="profile-info">
+        <p>
+            <strong>Họ tên:</strong>
+            <span>@Model.NguoiDung.HoTen</span>
+        </p>
+        <p>
+            <strong>Email:</strong>
+            <span>@Model.NguoiDung.Email</span>
+        </p>
+        <p>
+            <strong>Số điện thoại:</strong>
+            <span>@Model.NguoiDung.SoDienThoai</span>
+        </p>
+        <p>
+            <strong>Loại người dùng:</strong>
+            <span>@Model.NguoiDung.LoaiNguoiDung</span>
+        </p>
+
+        @if (Model.NguoiDung.LoaiNguoiDung == "Cư dân" && Model.CuDan != null)
+        {
+            <p>
+                <strong>Căn Hộ:</strong>
+                <span>@Model.CuDan.CanHo?.MaCan</span>
+            </p>
+            <p>
+                <strong>Chung Cư:</strong>
+                <span>@Model.CuDan.ChungCu?.Ten</span>
+            </p>
+        }
+        else
+        {
+            <p class="no-info">Không có thông tin căn hộ hoặc chung cư.</p>
+        }
+    </div>
+    <p style="text-align:center; margin-top:20px;">
+        <a href="/NguoiDung/ChangePassword" class="btn btn-warning">Đổi mật khẩu</a>
+    </p>
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+}

@@ -1,0 +1,54 @@
+﻿@model IEnumerable<QLCCCC.Models.ChuHo>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh Sách Chủ Hộ - QLCCCC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/chuho.css" asp-append-version="true" />
+
+</head>
+<body>
+    <div class="container">
+        <h2 class="header-title">Danh Sách Chủ Hộ</h2>
+
+        <div class="table-container">
+            <a asp-action="Create" class="btn-create">Thêm mới</a>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tên Chủ Hộ</th>
+                        <th>Mã Căn Hộ</th>
+                        <th>Tên Chung Cư</th>
+                        <th>Ngày Bắt Đầu</th>
+                        <th>Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var chuHo in Model)
+                    {
+                        <tr>
+                            <td>@chuHo.ID</td>
+                            <td>@chuHo.CuDan?.NguoiDung?.HoTen</td>
+                            <td>@chuHo.CanHo?.MaCan</td>
+                            <td>@chuHo.ChungCu?.Ten</td>
+                            <td>@chuHo.NgayBatDau.ToString("dd/MM/yyyy")</td>
+                            <td class="action-links">
+                                <a asp-action="Edit" asp-route-id="@chuHo.ID" class="edit">Chỉnh sửa</a> |
+                                <a asp-action="Delete" asp-route-id="@chuHo.ID" class="delete">Xóa</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

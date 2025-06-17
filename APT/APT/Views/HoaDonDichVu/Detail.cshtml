@@ -1,0 +1,46 @@
+﻿@model QLCCCC.Models.HoaDonDichVu
+<style>
+    .edit-apartment-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<div class="edit-apartment-container">
+@{
+    ViewData["Title"] = "Chi Tiết Hóa Đơn Dịch Vụ";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="card">
+    <div class="card-body">
+        <h5 class="card-title">Thông tin hóa đơn</h5>
+        <p><strong>Chung cư:</strong> @Model.ChungCu?.Ten</p>
+        <p><strong>Căn hộ:</strong> @Model.CanHo?.MaCan</p>
+        <p><strong>Ngày lập:</strong> @Model.NgayLap.ToString("dd/MM/yyyy")</p>
+        <p><strong>Tổng tiền:</strong> @Model.SoTien.ToString("N0") VNĐ</p>
+        <p><strong>Trạng thái:</strong> @Model.TrangThai</p>
+
+        <h5 class="mt-4">Dịch vụ sử dụng:</h5>
+        @if (Model.HoaDonDichVu_DichVus != null && Model.HoaDonDichVu_DichVus.Any())
+        {
+            <ul>
+                @foreach (var item in Model.HoaDonDichVu_DichVus)
+                {
+                    <li>@item.DichVu?.TenDichVu - @item.DichVu?.Gia.ToString("N0") VNĐ</li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>Không có dịch vụ nào.</p>
+        }
+
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </div>
+</div>
+</div>

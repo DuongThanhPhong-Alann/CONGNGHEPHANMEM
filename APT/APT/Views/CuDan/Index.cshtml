@@ -1,0 +1,76 @@
+﻿@model IEnumerable<QLCCCC.Models.CuDan>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh Sách Cư Dân - QLCCCC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/cudan.css" asp-append-version="true" />
+   
+</head>
+<body>
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div id="errorMessage" class="alert alert-danger alert-dismissible fade show mt-3 shadow-sm border" role="alert">
+            <i class="bi bi-exclamation-triangle-fill me-2"></i>
+            @TempData["ErrorMessage"]
+        </div>
+
+        <script>
+            setTimeout(function () {
+                var alertBox = document.getElementById('errorMessage');
+                if (alertBox) {
+                    // Sử dụng Bootstrap's fade-out
+                    alertBox.classList.remove('show');
+                    alertBox.classList.add('hide');
+
+                    // Sau khi hiệu ứng fade kết thúc (0.5s), ẩn hẳn
+                    setTimeout(function () {
+                        alertBox.style.display = 'none';
+                    }, 500);
+                }
+            }, 3000); // 2 giây
+        </script>
+    }
+
+    <div class="container">
+        <h2 class="header-title">Danh Sách Cư Dân</h2>
+
+        <div class="table-container">
+            <a asp-action="Create" class="btn-create">Thêm mới</a>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tên Người Dùng</th>
+                        <th>Căn Hộ</th>
+                        <th>Chung Cư</th>
+                        <th>Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var cuDan in Model)
+                    {
+                        <tr>
+                            <td>@cuDan.ID</td>
+                            <td>@cuDan.NguoiDung.HoTen</td>
+                            <td>@cuDan.CanHo?.MaCan</td>
+                            <td>@cuDan.CanHo?.ChungCu?.Ten</td>
+                            <td class="action-links">
+                                <a asp-action="Edit" asp-route-id="@cuDan.ID" class="edit">Chỉnh sửa</a> |
+                                <a asp-action="Delete" asp-route-id="@cuDan.ID" class="delete">Xóa</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

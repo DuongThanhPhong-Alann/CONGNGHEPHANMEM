@@ -1,0 +1,28 @@
+[
+  {
+    "ContainingType": "QLCCCC.Controllers.ChatBotController",
+    "Method": "ProcessMessage",
+    "RelativePath": "api/ChatBot",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "QLCCCC.Controllers.ChatbotRequest",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "QLCCCC.Controllers.DataExportController",
+    "Method": "ExportData",
+    "RelativePath": "api/DataExport",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

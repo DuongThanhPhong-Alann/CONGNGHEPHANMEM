@@ -1,0 +1,54 @@
+﻿@model QLCCCC.Models.DichVu
+<style>
+    .edit-apartment-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<div class="edit-apartment-container">
+    <h2>Xóa Dịch Vụ</h2>
+
+    <p>Bạn có chắc chắn muốn xóa dịch vụ này không?</p>
+
+    <table class="table">
+        <tr>
+            <th>ID:</th>
+            <td>@Model.ID</td>
+        </tr>
+        <tr>
+            <th>Tên Dịch Vụ:</th>
+            <td>@Model.TenDichVu</td>
+        </tr>
+        <tr>
+            <th>Mô Tả:</th>
+            <td>@Model.MoTa</td>
+        </tr>
+        <tr>
+            <th>Giá:</th>
+            <td>@Model.Gia.ToString("C0", new System.Globalization.CultureInfo("vi-VN"))</td>
+        </tr>
+        <tr>
+            <th>Hình Ảnh:</th>
+            <td>
+                @if (Model.HinhAnhDichVus != null && Model.HinhAnhDichVus.Count > 0)
+                {
+                    <img src="@Model.HinhAnhDichVus.FirstOrDefault()?.DuongDan" alt="Hình ảnh dịch vụ" style="width: 100px; height: auto;" />
+                }
+                else
+                {
+                    <span>Không có hình ảnh</span>
+                }
+            </td>
+        </tr>
+    </table>
+
+    <form asp-action="DeleteConfirmed" method="post">
+        <input type="hidden" asp-for="ID" />
+        <button type="submit" class="btn btn-danger">Xóa</button>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </form> <!-- Form is now properly closed -->
+</div>

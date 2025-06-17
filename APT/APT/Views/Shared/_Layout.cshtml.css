@@ -1,0 +1,67 @@
+﻿/* Layout CSS - Giao diện xanh dương đậm */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-word;
+    color: #1e3a8a; /* Xanh dương đậm */
+}
+
+a {
+    color: #1e3a8a; /* Xanh dương đậm */
+    text-decoration: none;
+}
+
+    a:hover {
+        color: #2563eb; /* Xanh dương sáng khi hover */
+    }
+
+.btn-primary {
+    color: #ffffff;
+    background-color: #1b263b; /* Xanh dương đậm */
+    border-color: #415a77; /* Xanh dương nhạt */
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    color: #ffffff;
+    background-color: #415a77; /* Xanh dương nhạt */
+    border-color: #2563eb; /* Xanh dương sáng */
+}
+
+.border-top {
+    border-top: 1px solid #2e3c50; /* Xanh dương đậm */
+}
+
+.border-bottom {
+    border-bottom: 1px solid #2e3c50; /* Xanh dương đậm */
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, 0.1);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+    background-color: #1b263b; /* Xanh dương đậm */
+    color: #ffffff;
+    border: 1px solid #415a77; /* Xanh dương nhạt */
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px;
+    background-color: #1b263b; /* Xanh dương đậm */
+    color: #ffffff;
+}
+
+/* Giao diện nền và văn bản chính */
+body {
+    background-color: #0d1b2a; /* Xanh dương đậm */
+    color: #ffffff;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}

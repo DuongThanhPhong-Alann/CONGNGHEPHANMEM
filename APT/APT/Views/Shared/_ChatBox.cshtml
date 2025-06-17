@@ -1,0 +1,50 @@
+﻿<div id="chat-widget" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+    <button id="chat-toggle" class="btn btn-primary rounded-circle shadow" style="width: 60px; height: 60px;">
+        💬
+    </button>
+
+    <div id="chat-panel" class="card shadow" style="display: none; width: 300px;">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <span>Hỏi đáp trực tuyến</span>
+            <button id="chat-close" class="btn btn-sm btn-light">×</button>
+        </div>
+        <div class="card-body" style="height: 250px; overflow-y: auto;" id="chatBox"></div>
+        <div class="card-footer">
+            <input type="text" id="userInput" class="form-control mb-1" placeholder="Tên bạn" />
+            <textarea id="messageInput" class="form-control mb-2" rows="2" placeholder="Nội dung..."></textarea>
+            <button id="sendButton" class="btn btn-sm btn-success w-100">Gửi</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/7.0.5/signalr.min.js"></script>
+<script>
+    const connection = new signalR.HubConnectionBuilder().withUrl("/chathub").build();
+
+    connection.on("ReceiveMessage", function (user, message) {
+        const msg = `<div><strong>${user}</strong>: ${message}</div>`;
+        const chatBox = document.getElementById("chatBox");
+        chatBox.innerHTML += msg;
+        chatBox.scrollTop = chatBox.scrollHeight;
+    });
+
+    connection.start().catch(err => console.error(err.toString()));
+
+    document.getElementById("sendButton").addEventListener("click", function () {
+        const user = document.getElementById("userInput").value;
+        const message = document.getElementById("messageInput").value;
+        if (!user || !message) return;
+
+        connection.invoke("SendMessage", user, message).catch(err => console.error(err.toString()));
+        document.getElementById("messageInput").value = '';
+    });
+
+    // Toggle UI
+    document.getElementById("chat-toggle").addEventListener("click", () => {
+        document.getElementById("chat-panel").style.display = 'block';
+    });
+
+    document.getElementById("chat-close").addEventListener("click", () => {
+        document.getElementById("chat-panel").style.display = 'none';
+    });
+</script>

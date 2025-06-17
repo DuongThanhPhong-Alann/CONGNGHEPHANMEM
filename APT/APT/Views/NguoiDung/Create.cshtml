@@ -1,0 +1,49 @@
+﻿@model QLCCCC.Models.NguoiDung
+<style>
+    .edit-apartment-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<div class="edit-apartment-container">
+<h2>Thêm Người Dùng</h2>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label for="HoTen">Họ Tên</label>
+        <input type="text" id="HoTen" name="HoTen" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="SoDienThoai">Số Điện Thoại</label>
+        <input type="text" id="SoDienThoai" name="SoDienThoai" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" id="Email" name="Email" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label for="MatKhau">Mật Khẩu</label>
+        <input type="password" id="MatKhau" name="MatKhau" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="LoaiNguoiDung">Loại Người Dùng</label>
+        <select id="LoaiNguoiDung" name="LoaiNguoiDung" class="form-control" required>
+            <option value="">-- Chọn loại người dùng --</option>
+            @foreach (var item in ViewBag.LoaiNguoiDungList)
+            {
+                <option value="@item.Value">@item.Text</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Tạo Mới</button>
+</form>
+</div>

@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "apartmentchatbot-458709",
+  "private_key_id": "e5be44f2169bebb73f904c5676e30fefa65f18fe",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDdVhdzjbcNKPeq\np7LPoY4h9kQPqF7AHG2a1HQUjPGDeasqgx7WxeBeH9a74ljPUoACinSZ6AlEZ3GW\nH7XIEI2Ce3paNQ9cVY+mVXVHmkusR3KpAthGKLzc3FkCMMjoHF8ulqBWY53IhnYa\nNZV/b7jA/K//W1A/C3uKMz34sYA4YsSNXSPhUuBBHOzPAgTdsIC/ssa9nkfZ+sk3\nxuGbA1rW/srne6vibGjI9ujAomj41etSVVUsLp0nLc4N4ZN8wv7uNNRAB+AmWFNW\nw1/2ti3jb84FiggAsAcCXATJzNHgEMSWw6RRmw+bXPO14n9EnvpMz/jSpF97ajlE\nsjgDK85TAgMBAAECggEADOsGaV8fDOyUL+ijvgyO0BqgdE1+YjYGi5/UupJTUjoa\nrFuExEI+SyAOl16pkkgdYoiUL5tkVxK2hW2KXYfhynjMdlFceSYhQTMBqlEuE3sE\nDSs2Vjnwc++EXmVchHeLcpul9gTQY7C9WeBAvnRV0yWsW/oHX/aamkFNX6N0eVXm\nm4qBjgwWNZzPsAAtD/g9kqwxv9hkTHFUwlEGtKLGxQOwJZfrGgjvJ1UB7olRQad5\nkUOMXwdFG7i5FEY6rckgCbXLBNC155NxL1MEZY/lNetqbalmkAYhe91+uS/c+kPC\nfh1qORwXfpoG3cfQn2fJUUsBqLzbQBaEz5+uOJPRgQKBgQDvKlS+9q7IAaKbRc1R\nT4CQNwQGs557GQ3vppvG6tze1OCFupC+OCBlAUs75TuiA9Dp1/9GFsiV2T5uAN3Y\nrCK/hL+h0D/bQk/hWiDv2Ospek9q5Lm5wTjrmByVaxSzOK1F/VTq04vny9ScQd+f\nHieXlkYp+DFbcTM8H86AvjamEwKBgQDs6nzXumjpwMgRodgz2Mq1Pc4+uzcjxW8l\nOCsaTyOlc2Wa0xiG3eVmv7IEByfg7Vc+3lGqhNucsEOEZJpSNJAQGtQehK5WY9er\nscueDqXSBrNFaCulwu69lQQqDcONrdTR7ufopEELHnkM+Z796yQDACM1328zoScz\nWKiyGUA+wQKBgQC4ZmkE++ny59/Z3E3b3XKAvwppqGAPBVhLaKg/DKLTZErgkOI8\n58WCWycIvUvnNQ4E3rdB8Rsi/mc2JZDnGIGKLO4b8xbpFQ3F8NnoU9WtG1LUVhok\n8KfUbmnLgs5pCNAAYLzyeb0rMWtyNxAV/QgFxqW+glB78qHQP63WcdJs5QKBgQCQ\nDr0+x+CHUmvVHN5EGGyZ7Cz+xAPxQlok/ZRn+Psp3ZNIo1dkmoSlB6cM//Tltiu4\n1KI/121aR2umky2rEr8Oq+GTdQY1DZzUj9XKFAoMPXrAl2kC8BcPPA8+KwRfn/Wq\neWSWd1n9ktf0ZcyhhVtuX6UJWwVZFYKqnBxnvybrgQKBgCaM0gmZPcRO4G6LnUqr\nc5TdfD5N6hsGl+wradCqw7jrSs6/2Ww68UhQDmXlGLhub6Pa0VE4pDbX9Q536aLn\nuSRddKtPmiLoGrd2CKXhL9DfEpH8Tqc1MNED6YmMgQoBaOkG8YEwUTy0ixU4CmoF\nv17qhRMk9DIVm/2bc1j0wNYe\n-----END PRIVATE KEY-----\n",
+  "client_email": "dialogflow-admin@apartmentchatbot-458709.iam.gserviceaccount.com",
+  "client_id": "102701498633258592990",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dialogflow-admin%40apartmentchatbot-458709.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

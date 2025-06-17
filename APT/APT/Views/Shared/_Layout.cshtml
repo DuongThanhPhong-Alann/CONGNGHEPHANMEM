@@ -1,0 +1,318 @@
+﻿@using System.Security.Claims;
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - APT Management</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/QLCCCC.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container-fluid navbar-container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="fas fa-building"></i> APT Management
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-center">
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" asp-controller="ChungCu" asp-action="Index">Chung Cư</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-controller="CanHo" asp-action="Index">Căn Hộ</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-controller="DichVu" asp-action="Index">Dịch Vụ</a></li>
+                            <li class="nav-item"><a class="nav-link" asp-controller="TinTuc" asp-action="Index">Tin Tức</a></li>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                var role = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value ?? "Khách";
+                                if (role == "Cư dân")
+                                {
+                                    <li class="nav-item"><a class="nav-link" asp-controller="HoaDonDichVu" asp-action="Index">Hóa Đơn Dịch Vụ</a></li>
+                                    <li class="nav-item"><a class="nav-link" asp-controller="PhanAnh" asp-action="Index">Phản Ánh</a></li>
+                                }
+                                else if (role == "Ban quản lý")
+                                {
+                                    <li class="nav-item"><a class="nav-link" asp-controller="CuDan" asp-action="Index">Cư Dân</a></li>
+                                    <li class="nav-item"><a class="nav-link" asp-controller="NguoiDung" asp-action="Index">Người Dùng</a></li>
+                                    <li class="nav-item"><a class="nav-link" asp-controller="HoaDonDichVu" asp-action="Index">Hóa Đơn Dịch Vụ</a></li>
+                                    <li class="nav-item"><a class="nav-link" asp-controller="PhanAnh" asp-action="Index">Phản Ánh</a></li>
+                                    <li class="nav-item"><a class="nav-link" asp-controller="ChuHo" asp-action="Index">Chủ Hộ</a></li>
+                                }
+                            }
+                        </ul>
+                    </div>
+                    <ul class="navbar-nav ms-auto align-items-center">
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li class="nav-item">
+                                <span class="navbar-text me-3">Xin chào, @User.Identity.Name!</span>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Auth" asp-action="UserProfile">
+                                    <i class="fas fa-user-circle"></i> Tài khoản
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <form asp-controller="Auth" asp-action="Logout" method="post" style="display:inline;">
+                                    <button type="submit" class="btn btn-danger btn-sm">
+                                        <i class="fas fa-sign-out-alt"></i> Đăng xuất
+                                    </button>
+                                </form>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item">
+                                <a class="btn btn-primary btn-sm" asp-controller="Auth" asp-action="Login">
+                                    <i class="fas fa-sign-in-alt"></i> Đăng nhập
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <main role="main" class="pb-4">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="contact-box">
+                    <h2><i class="fas fa-address-book"></i> Liên Hệ</h2>
+                    <ul class="contact-info">
+                        <li><strong>Địa chỉ:</strong> S3.05 Vinhome GrandPark, Quận 9, TP.HCM</li>
+                        <li><strong>Email:</strong> <a href="mailto:contact@aptmanagement.com">webapt@gmail.com</a></li>
+                        <li><strong>Điện thoại:</strong> <a href="tel:+842838123456">+84 827274387</a></li>
+                    </ul>
+                </div>
+                <div class="map-box">
+                    <h3><i class="fas fa-map-marker-alt"></i> Bản Đồ</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d979.6619029936398!2d106.83417650344887!3d10.838256322983101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752196e5f57f89%3A0x26b84951a0b81325!2sS3.05%20Vinhomes%20Grand%20Park!5e0!3m2!1svi!2s!4v1748306093374!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="social-box">
+                    <h3><i class="fas fa-share-alt"></i> Kết Nối Với Chúng Tôi</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-btn instagram"><i class="fab fa-instagram"></i> Instagram</a>
+                        <a href="#" class="social-btn twitter"><i class="fab fa-twitter"></i> Twitter</a>
+                        <a href="#" class="social-btn github"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="#" class="social-btn discord"><i class="fab fa-discord"></i> Discord</a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2025 APT Connection. Developed by <a href="#">PHQ-TECH</a>.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Button -->
+    <div class="chatbot-button" id="chatbotToggle">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+
+    <!-- Chatbot Window -->
+    <div class="chatbot-window" id="chatbotWindow">
+        <div class="chatbot-header">
+            <span><i class="fas fa-robot"></i> APT Chatbot</span>
+            <i class="fas fa-times" id="chatbotClose"></i>
+        </div>
+        <div class="chatbot-body" id="chatbotMessages">
+            <!-- Danh sách tùy chọn sẽ được thêm động từ JavaScript -->
+        </div>
+        <div class="chatbot-footer">
+            <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Nhập câu hỏi hoặc chọn tùy chọn..." />
+            <button class="chatbot-send-btn" id="chatbotSend">Gửi</button>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script>
+        $(document).ready(function () {
+            const chatbotToggle = $('#chatbotToggle');
+            const chatbotWindow = $('#chatbotWindow');
+            const chatbotClose = $('#chatbotClose');
+            const chatbotMessages = $('#chatbotMessages');
+            const chatbotInput = $('#chatbotInput');
+            const chatbotSend = $('#chatbotSend');
+            let lastMessage = '';
+            let lastChungCuName = '';
+
+            // Gọi API để lấy danh sách tùy chọn ban đầu khi chatbot khởi động
+            function initializeChatbot() {
+                $.ajax({
+                    url: '/api/ChatBot',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ Message: 'xin chào' }),
+                    success: function (response) {
+                        console.log('Initial backend response:', response);
+                        displayBotResponse(response);
+                    },
+                    error: function (xhr, status, error) {
+                        console.error('Initial AJAX error:', { status, error, xhr });
+                        let errorMessage = 'Lỗi kết nối với server. Vui lòng thử lại sau.';
+                        if (xhr.status === 500) {
+                            errorMessage = 'Lỗi hệ thống: ' + (xhr.responseJSON?.reply || 'Không thể xử lý yêu cầu.');
+                        }
+                        chatbotMessages.append(`
+                            <div class="chatbot-message error">${errorMessage}</div>
+                        `);
+                        scrollToBottom();
+                    }
+                });
+            }
+
+            // Toggle chatbot window
+            chatbotToggle.click(function () {
+                chatbotWindow.toggleClass('open');
+                if (chatbotWindow.hasClass('open') && chatbotMessages.children().length === 0) {
+                    initializeChatbot();
+                }
+            });
+
+            chatbotClose.click(function () {
+                chatbotWindow.removeClass('open');
+            });
+
+            // Send message
+            function sendMessage(message) {
+                if (!message.trim()) {
+                    console.warn('Empty message input.');
+                    chatbotMessages.append('<div class="chatbot-message error">Vui lòng nhập câu hỏi hoặc chọn một tùy chọn để tiếp tục.</div>');
+                    scrollToBottom();
+                    return;
+                }
+
+                if (message === lastMessage) {
+                    console.warn('Duplicate message detected:', message);
+                    chatbotMessages.append('<div class="chatbot-message error">Vui lòng chọn một tùy chọn khác hoặc nhập câu hỏi mới.</div>');
+                    scrollToBottom();
+                    return;
+                }
+                lastMessage = message;
+
+                chatbotMessages.append(`
+                    <div class="chatbot-message user">${message}</div>
+                `);
+                chatbotInput.val('');
+                scrollToBottom();
+
+                chatbotMessages.append(`
+                    <div class="chatbot-message bot loading">Đang xử lý...</div>
+                `);
+                scrollToBottom();
+
+                $.ajax({
+                    url: '/api/ChatBot',
+                    method: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ Message: message }),
+                    success: function (response) {
+                        $('.chatbot-message.loading').remove();
+                        console.log('Backend response:', response);
+                        displayBotResponse(response);
+                    },
+                    error: function (xhr, status, error) {
+                        $('.chatbot-message.loading').remove();
+                        console.error('AJAX error:', { status, error, xhr });
+                        let errorMessage = 'Lỗi kết nối với server. Vui lòng thử lại sau.';
+                        if (xhr.status === 500) {
+                            errorMessage = 'Lỗi hệ thống: ' + (xhr.responseJSON?.reply || 'Không thể xử lý yêu cầu.');
+                        }
+                        chatbotMessages.append(`
+                            <div class="chatbot-message error">${errorMessage}</div>
+                        `);
+                        scrollToBottom();
+                    }
+                });
+            }
+
+            // Display bot response
+            function displayBotResponse(response) {
+                if (!response || !response.reply) {
+                    console.error('Invalid or missing response:', response);
+                    chatbotMessages.append(`
+                        <div class="chatbot-message error">Phản hồi không hợp lệ từ server. Vui lòng thử lại.</div>
+                    `);
+                    scrollToBottom();
+                    return;
+                }
+
+                const reply = response.reply;
+                const options = response.options || [];
+                chatbotMessages.append(`
+                    <div class="chatbot-message bot">${reply}</div>
+                `);
+
+                // Cập nhật lastChungCuName
+                const chungCuMatch = reply.match(/Thông tin chung cư ([^,]+): Địa chỉ:/);
+                if (chungCuMatch) {
+                    lastChungCuName = chungCuMatch[1].trim();
+                    console.log('Updated lastChungCuName:', lastChungCuName);
+                }
+
+                // Hiển thị tùy chọn dưới dạng nút
+                if (options.length > 0) {
+                    let optionsHtml = '<div class="chatbot-options">';
+                    options.forEach(opt => {
+                        let displayText = opt;
+                        if (opt.startsWith("Xem chung cư ")) {
+                            displayText = opt.replace("Xem chung cư ", "");
+                        } else if (opt.startsWith("Xem căn hộ ")) {
+                            displayText = opt.split("thuộc")[0].replace("Xem căn hộ ", "");
+                        } else if (opt.startsWith("Xem dịch vụ ")) {
+                            displayText = opt.replace("Xem dịch vụ ", "");
+                        } else if (opt.startsWith("Danh sách căn hộ của chung cư ")) {
+                            displayText = "Danh sách căn hộ";
+                        } else if (opt.startsWith("Tổng số căn hộ của chung cư ")) {
+                            displayText = "Tổng số căn hộ";
+                        }
+                        optionsHtml += `<button class="chatbot-option-btn" data-value="${opt}">${displayText}</button>`;
+                    });
+                    optionsHtml += '</div>';
+                    chatbotMessages.append(optionsHtml);
+
+                    $('.chatbot-option-btn').off('click').on('click', function () {
+                        const optionValue = $(this).attr('data-value');
+                        console.log('Option selected:', optionValue);
+                        sendMessage(optionValue);
+                    });
+                }
+
+                scrollToBottom();
+            }
+
+            // Scroll to bottom of chat
+            function scrollToBottom() {
+                chatbotMessages.scrollTop(chatbotMessages[0].scrollHeight);
+            }
+
+            // Handle send button click
+            chatbotSend.click(function () {
+                sendMessage(chatbotInput.val());
+            });
+
+            // Handle Enter key press
+            chatbotInput.on('keypress', function (e) {
+                if (e.which === 13) {
+                    sendMessage(chatbotInput.val());
+                }
+            });
+        });
+    </script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

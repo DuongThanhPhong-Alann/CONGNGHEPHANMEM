@@ -1,0 +1,102 @@
+﻿@model IEnumerable<QLCCCC.Models.TinTuc>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khám Phá Tin Tức - QLCCCC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/ttindex.css" asp-append-version="true" />
+   
+
+</head>
+<body>
+    <div class="container">
+        <!-- Container cho hình ảnh và tiêu đề -->
+        <div class="header-container">
+            <img src="~/images/Tintuc.jpg" alt="Hình ảnh đầu trang Tin Tức" class="header-image" />
+            <h1 class="header-title">Khám Phá Tin Tức</h1>
+        </div>
+
+        @if (User.IsInRole("Ban quản lý"))
+        {
+            <div class="table-container">
+                <a asp-action="Create" class="btn btn-primary mb-3">Thêm Tin Tức</a>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Tiêu Đề</th>
+                            <th>Ngày Đăng</th>
+                            <th>Ngày Sự Kiện</th>
+                            <th>Hình Ảnh</th>
+                            <th>Thao Tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    <a href="@Url.Action("Details", "TinTuc", new { id = item.ID })" style="color: #8d5524;">@item.TieuDe</a>
+                                </td>
+                                <td>@item.NgayDang.ToString("dd/MM/yyyy")</td>
+                                <td>@(item.NgaySuKien?.ToString("dd/MM/yyyy") ?? "Không có")</td>
+                                <td>
+                                    @if (!string.IsNullOrEmpty(item.HinhAnh))
+                                    {
+                                        <img src="@item.HinhAnh" alt="@item.TieuDe" style="max-width: 100px; height: auto;" />
+                                    }
+                                    else
+                                    {
+                                        <span>Không có hình ảnh</span>
+                                    }
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.ID" class="btn btn-warning btn-sm">Sửa</a>
+                                    <a asp-action="Delete" asp-route-id="@item.ID" class="btn btn-danger btn-sm">Xóa</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+
+        <!-- Hiển thị ô tin tức cho tất cả người dùng -->
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-md-12">
+                    <a href="@Url.Action("Details", "TinTuc", new { id = item.ID })" class="info-box">
+                        @if (!string.IsNullOrEmpty(item.HinhAnh))
+                        {
+                            <img src="@item.HinhAnh" alt="@item.TieuDe" />
+                        }
+                        else
+                        {
+                            <img src="~/images/default-news.jpg" alt="Hình ảnh mặc định" />
+                        }
+                        <div class="info-box-content">
+                            <h5>@item.TieuDe</h5>
+                            <p class="date"><strong>Ngày Đăng:</strong> @item.NgayDang.ToString("dd/MM/yyyy")</p>
+                            <p class="date"><strong>Ngày Sự Kiện:</strong> @(item.NgaySuKien?.ToString("dd/MM/yyyy") ?? "Không có")</p>
+                            <p class="description">
+                                @{
+                                    var maxLength = 100; // Giới hạn số ký tự tối đa
+                                    var shortDescription = item.NoiDung.Length > maxLength ? item.NoiDung.Substring(0, maxLength) + "..." : item.NoiDung;
+                                }
+                                @shortDescription
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

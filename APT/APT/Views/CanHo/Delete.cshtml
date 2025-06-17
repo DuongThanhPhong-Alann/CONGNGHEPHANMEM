@@ -1,0 +1,32 @@
+﻿@model QLCCCC.Models.CanHo
+<style>
+    .edit-apartment-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<div class="edit-apartment-container">
+    <h1>Xóa Căn hộ</h1>
+
+    <h3>Bạn có chắc muốn xóa căn hộ này?</h3>
+    <div>
+        <h4>@Html.DisplayFor(model => model.MaCan)</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-2">Chung cư</dt>
+            <dd class="col-sm-10">@(Model.ChungCu?.Ten ?? "Không có dữ liệu")</dd> <!-- Kiểm tra null -->
+            <dt class="col-sm-2">Diện tích</dt>
+            <dd class="col-sm-10">@Html.DisplayFor(model => model.DienTich)</dd>
+        </dl>
+
+        <form asp-action="Delete">
+            <input type="hidden" asp-for="ID" />
+            <input type="submit" value="Xóa" class="btn btn-danger" /> |
+            <a asp-action="Index">Quay lại</a>
+        </form>
+    </div>
+</div>

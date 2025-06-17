@@ -1,0 +1,107 @@
+﻿<style >
+body {
+    background: linear-gradient(to right, #e0f7fa, #b2ebf2); /* Gradient xanh dương nhạt */
+    padding-top: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #00695c; /* Màu xanh dương đậm */
+}
+
+.container {
+    max-width: 900px;
+    background-color: #ffffff; /* Nền trắng tinh */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Bóng đổ nhẹ */
+    transition: box-shadow 0.3s ease;
+}
+
+    .container:hover {
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.07); /* Bóng đổ tăng khi hover */
+    }
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #0288d1; /* Xanh dương sáng */
+    font-weight: 600;
+}
+
+.apartment-name {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #01579b; /* Xanh dương đậm */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.03); /* Bóng chữ nhẹ */
+}
+
+.back-link {
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #0288d1; /* Xanh dương sáng */
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+    .back-link:hover {
+        color: #01579b; /* Xanh dương đậm hơn khi hover */
+    }
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #b2ebf2; /* Viền xanh dương nhạt */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .info-table th, .info-table td {
+        padding: 10px;
+        font-size: 0.9rem;
+        border: 1px solid #b2ebf2; /* Viền nhạt đồng bộ */
+    }
+
+    .info-table th {
+        font-weight: 600;
+        color: #00695c; /* Xanh dương đậm */
+        background-color: #e0f7fa; /* Xanh dương nhạt */
+        width: 30%;
+    }
+
+    .info-table td {
+        width: 70%;
+        color: #00796b; /* Xanh dương nhạt */
+    }
+
+.image-gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+    .image-gallery img {
+        width: 100%;
+        max-width: 700px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); /* Bóng đổ nhẹ */
+        transition: transform 0.3s ease;
+    }
+
+        .image-gallery img:hover {
+            transform: scale(1.05); /* Phóng to nhẹ khi hover */
+        }
+
+    .image-gallery span {
+        font-size: 1rem;
+        color: #c2185b; /* Đỏ hồng đậm */
+        font-style: italic;
+    }
+
+</style >

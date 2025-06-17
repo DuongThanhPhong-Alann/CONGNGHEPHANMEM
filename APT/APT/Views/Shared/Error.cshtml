@@ -1,0 +1,37 @@
+﻿@model QLCCCC.Models.ErrorViewModel
+@{
+    ViewData["Title"] = "Lỗi hệ thống";
+}
+
+<h1 class="text-danger">❌ Lỗi hệ thống.</h1>
+<h2 class="text-danger">Đã xảy ra lỗi khi xử lý yêu cầu.</h2>
+
+@if (Model != null) // Kiểm tra nếu Model không null
+{
+    @if (Model.ShowRequestId)
+    {
+        <p>
+            <strong>📌 Mã lỗi:</strong> <code>@Model.RequestId</code>
+        </p>
+    }
+}
+else
+{
+    <p class="text-warning">⚠ Không có thông tin lỗi cụ thể.</p>
+}
+
+<hr />
+
+<h3>🔧 Chế độ Phát triển</h3>
+<p>
+    Nếu bạn là lập trình viên, hãy kiểm tra **chế độ Debug** để xem thông tin chi tiết hơn.
+</p>
+<p class="alert alert-warning">
+    <strong>⚠ Cảnh báo:</strong> Không bật chế độ Debug trên máy chủ thực tế!
+    Nó có thể tiết lộ thông tin nhạy cảm cho người dùng.
+</p>
+<p>
+    Để bật Debug trong môi trường **local**, đặt biến môi trường
+    <code>ASPNETCORE_ENVIRONMENT=Development</code>
+    và khởi động lại ứng dụng.
+</p>

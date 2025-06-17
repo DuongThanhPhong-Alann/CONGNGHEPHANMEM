@@ -1,0 +1,43 @@
+﻿@model QLCCCC.Models.PhanAnh
+<style>
+    .edit-apartment-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<div class="edit-apartment-container">
+    <h1>Sửa phản ánh</h1>
+
+    <form asp-action="Edit">
+        <input type="hidden" asp-for="ID" />
+        <input type="hidden" asp-for="NgayGui" />
+        <div class="form-group">
+            <label asp-for="ID_NguoiDung" class="control-label"></label>
+            <select asp-for="ID_NguoiDung" class="form-control" asp-items="ViewBag.NguoiDungList"></select>
+            <span asp-validation-for="ID_NguoiDung" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="NoiDung" class="control-label"></label>
+            <textarea asp-for="NoiDung" class="form-control"></textarea>
+            <span asp-validation-for="NoiDung" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="TrangThai" class="control-label"></label>
+            <select asp-for="TrangThai" class="form-control" asp-items="ViewBag.TrangThaiList"></select>
+            <span asp-validation-for="TrangThai" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Lưu" class="btn btn-primary" />
+        </div>
+    </form>
+
+    @section Scripts {
+        @{
+            await Html.RenderPartialAsync("_ValidationScriptsPartial");
+        }
+    }
+</div>

@@ -1,0 +1,95 @@
+﻿@model QLCCCC.Models.ChuHo
+<style>
+    .edit-apartment-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<div class="edit-apartment-container">
+    @{
+        ViewData["Title"] = "Thêm Chủ Hộ";
+        var cuDans = ViewBag.CuDans as List<QLCCCC.Models.CuDan>;
+    }
+
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div class="alert alert-danger">
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <div>@error.ErrorMessage</div>
+            }
+        </div>
+    }
+
+
+    <div class="container mt-5">
+        <div class="form-wrapper p-4 rounded shadow-sm mx-auto" style="max-width: 800px; background: linear-gradient(to right, #ffffff, #fef9f2);">
+            <h2 class="text-center mb-4" style="color:#0d47a1;">Thêm Chủ Hộ</h2>
+
+            <form asp-action="Create" method="post" class="row g-3">
+                <div class="col-md-6">
+                    <label for="ID_CuDan" class="form-label fw-bold">Mã Cư Dân</label>
+                    <select id="ID_CuDan" name="ID_CuDan" class="form-select rounded-pill" onchange="loadThongTin()" required>
+                        <option value="">-- Chọn Mã Cư Dân --</option>
+                        @foreach (var cuDan in cuDans)
+                        {
+                            <option value="@cuDan.ID">@cuDan.ID</option>
+                        }
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                    <label asp-for="ID_CanHo" class="form-label fw-bold">Mã Căn Hộ</label>
+                    <input asp-for="ID_CanHo" id="ID_CanHo" class="form-control rounded-pill" readonly />
+                </div>
+
+                <div class="col-md-6">
+                    <label asp-for="ID_ChungCu" class="form-label fw-bold">Mã Chung Cư</label>
+                    <input asp-for="ID_ChungCu" id="ID_ChungCu" class="form-control rounded-pill" readonly />
+                </div>
+
+                <div class="col-md-6">
+                    <label asp-for="NgayBatDau" class="form-label fw-bold">Ngày Bắt Đầu</label>
+                    <input asp-for="NgayBatDau" type="date" class="form-control rounded-pill" />
+                </div>
+
+                <div class="col-md-12">
+                    <label asp-for="GhiChu" class="form-label fw-bold">Ghi Chú</label>
+                    <textarea asp-for="GhiChu" class="form-control rounded" rows="3" placeholder="Nhập ghi chú nếu có..."></textarea>
+                </div>
+
+                <div class="col-12 text-center mt-4">
+                    <button type="submit" class="btn btn-success px-4 py-2 rounded-pill fw-bold" style="background: linear-gradient(135deg,  #90caf9, #42a5f5);">
+                        <i class="bi bi-plus-circle"></i> Thêm
+                    </button>
+                    <a asp-action="Index" class="btn btn-secondary px-4 py-2 rounded-pill fw-bold ms-2">
+                        Quay lại
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    @section Scripts {
+        <script>
+            function loadThongTin() {
+                var idCuDan = document.getElementById('ID_CuDan').value;
+                if (idCuDan) {
+                    fetch('/ChuHo/GetThongTinCuDan?idCuDan=' + idCuDan)
+                        .then(response => response.json())
+                        .then(data => {
+                            document.getElementById('ID_CanHo').value = data.id_CanHo;
+                            document.getElementById('ID_ChungCu').value = data.id_ChungCu;
+                        });
+                } else {
+                    document.getElementById('ID_CanHo').value = "";
+                    document.getElementById('ID_ChungCu').value = "";
+                }
+            }
+        </script>
+    }
+</div>

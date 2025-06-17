@@ -1,0 +1,1049 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\APT.bundle.scp.css",
+      "PackagePath": "staticwebassets\\APT.9ceym9a4s5.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\css\\canhodetails.css",
+      "PackagePath": "staticwebassets\\css\\canhodetails.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\css\\canhoindex.css",
+      "PackagePath": "staticwebassets\\css\\canhoindex.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\css\\chuho.css",
+      "PackagePath": "staticwebassets\\css\\chuho.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\css\\chungcudetails.css",
+      "PackagePath": "staticwebassets\\css\\chungcudetails.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\css\\chungcuindex.css",
+      "PackagePath": "staticwebassets\\css\\chungcuindex.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\css\\cudan.css",
+      "PackagePath": "staticwebassets\\css\\cudan.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\css\\dvdetails.css",
+      "PackagePath": "staticwebassets\\css\\dvdetails.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\css\\dvindex.css",
+      "PackagePath": "staticwebassets\\css\\dvindex.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\css\\hdduyet.css",
+      "PackagePath": "staticwebassets\\css\\hdduyet.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\css\\hdindex.css",
+      "PackagePath": "staticwebassets\\css\\hdindex.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\css\\ndindex.css",
+      "PackagePath": "staticwebassets\\css\\ndindex.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\css\\ttdetails.css",
+      "PackagePath": "staticwebassets\\css\\ttdetails.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\css\\ttindex.css",
+      "PackagePath": "staticwebassets\\css\\ttindex.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\00c78069-a4bf-4513-812a-d9fcd4eb280a_canho4.jpg",
+      "PackagePath": "staticwebassets\\images\\00c78069-a4bf-4513-812a-d9fcd4eb280a_canho4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\08ef3327-709a-4f7e-bd14-fd489c527372_Canho6.jpg",
+      "PackagePath": "staticwebassets\\images\\08ef3327-709a-4f7e-bd14-fd489c527372_Canho6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\0adea74e-7fe9-457a-bdb7-ed06ce8c1cd9_Canho10.jpg",
+      "PackagePath": "staticwebassets\\images\\0adea74e-7fe9-457a-bdb7-ed06ce8c1cd9_Canho10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\0dd02330-2c7c-462d-a381-cc173be2cbc5_Canho9.jpg",
+      "PackagePath": "staticwebassets\\images\\0dd02330-2c7c-462d-a381-cc173be2cbc5_Canho9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\12bd013c-d876-4285-a5e8-1d8ce3c357f3_canho3.jpg",
+      "PackagePath": "staticwebassets\\images\\12bd013c-d876-4285-a5e8-1d8ce3c357f3_canho3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\17b7493f-3e33-4d5d-8d36-a20cc27d0db2_CanHo1.jpg",
+      "PackagePath": "staticwebassets\\images\\17b7493f-3e33-4d5d-8d36-a20cc27d0db2_CanHo1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\195327ea-b364-4085-a7fc-5fc820ca455d_Canho10.jpg",
+      "PackagePath": "staticwebassets\\images\\195327ea-b364-4085-a7fc-5fc820ca455d_Canho10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\2672f909-759a-4706-905e-ed53213df489_Canho6.jpg",
+      "PackagePath": "staticwebassets\\images\\2672f909-759a-4706-905e-ed53213df489_Canho6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\26828658-6176-4f07-9159-e65e4f405470_canho4.jpg",
+      "PackagePath": "staticwebassets\\images\\26828658-6176-4f07-9159-e65e4f405470_canho4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\26c553f3-2ea8-46bc-9109-d1ee79c95c71_Canho5.jpg",
+      "PackagePath": "staticwebassets\\images\\26c553f3-2ea8-46bc-9109-d1ee79c95c71_Canho5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\2a772c2e-50e1-4156-9881-e410fe9101b4_canho4.jpg",
+      "PackagePath": "staticwebassets\\images\\2a772c2e-50e1-4156-9881-e410fe9101b4_canho4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\2a810f66-c5e3-4d56-8929-98a40a504c5e_2a772c2e-50e1-4156-9881-e410fe9101b4_canho4.jpg",
+      "PackagePath": "staticwebassets\\images\\2a810f66-c5e3-4d56-8929-98a40a504c5e_2a772c2e-50e1-4156-9881-e410fe9101b4_canho4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\30471508-6dcc-43d5-b8cd-70c876e4c796_CanHo1.jpg",
+      "PackagePath": "staticwebassets\\images\\30471508-6dcc-43d5-b8cd-70c876e4c796_CanHo1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\37500fac-6531-4b45-8718-f94658463a71_Canho7.jpg",
+      "PackagePath": "staticwebassets\\images\\37500fac-6531-4b45-8718-f94658463a71_Canho7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\3ba1cfa7-c3eb-4757-a323-33bcafaadf8b_Canho5.jpg",
+      "PackagePath": "staticwebassets\\images\\3ba1cfa7-c3eb-4757-a323-33bcafaadf8b_Canho5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\4fa60a33-ff5d-4427-928f-ee9f9753c6e9_canho2.jpg",
+      "PackagePath": "staticwebassets\\images\\4fa60a33-ff5d-4427-928f-ee9f9753c6e9_canho2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\5944c863-901d-4c00-99a1-196ca07b2d11_canho1.jpg",
+      "PackagePath": "staticwebassets\\images\\5944c863-901d-4c00-99a1-196ca07b2d11_canho1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\598eca2a-36be-42b6-85de-bda4db08afd6_canho4.jpg",
+      "PackagePath": "staticwebassets\\images\\598eca2a-36be-42b6-85de-bda4db08afd6_canho4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\5d1239f7-7819-4fb2-a908-06837e40545e_Canho7.jpg",
+      "PackagePath": "staticwebassets\\images\\5d1239f7-7819-4fb2-a908-06837e40545e_Canho7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\61a74a3c-e7a4-4d7b-855d-09d237fa8768_canho3.jpg",
+      "PackagePath": "staticwebassets\\images\\61a74a3c-e7a4-4d7b-855d-09d237fa8768_canho3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\62654692-705e-40a2-b9c5-5ac7b7a481e0_Canho8.jpg",
+      "PackagePath": "staticwebassets\\images\\62654692-705e-40a2-b9c5-5ac7b7a481e0_Canho8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\64a9ec68-4d90-4a76-8efd-996bcef12493_canho1.jpg",
+      "PackagePath": "staticwebassets\\images\\64a9ec68-4d90-4a76-8efd-996bcef12493_canho1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\68ad3b93-eddf-4b5c-848a-7ba8f3f131de_Canho9.jpg",
+      "PackagePath": "staticwebassets\\images\\68ad3b93-eddf-4b5c-848a-7ba8f3f131de_Canho9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\68da1b95-97e9-4266-b6fc-d9caf98e3262_Canho5.jpg",
+      "PackagePath": "staticwebassets\\images\\68da1b95-97e9-4266-b6fc-d9caf98e3262_Canho5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\6a046d01-5b34-49b6-bcd8-21b47d634f0a_CanHo1.jpg",
+      "PackagePath": "staticwebassets\\images\\6a046d01-5b34-49b6-bcd8-21b47d634f0a_CanHo1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\6ae5e361-7478-4e04-ba8c-5866aa9054c8_canho1.jpg",
+      "PackagePath": "staticwebassets\\images\\6ae5e361-7478-4e04-ba8c-5866aa9054c8_canho1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\71552d67-7ab5-49b6-9bee-d05bca13e8fc_Canho6.jpg",
+      "PackagePath": "staticwebassets\\images\\71552d67-7ab5-49b6-9bee-d05bca13e8fc_Canho6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\74911c1b-4db9-4ac2-97a9-16013a8c5027_canho2.jpg",
+      "PackagePath": "staticwebassets\\images\\74911c1b-4db9-4ac2-97a9-16013a8c5027_canho2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\754417c1-f758-448a-95c9-5bba5b3834da_Canho9.jpg",
+      "PackagePath": "staticwebassets\\images\\754417c1-f758-448a-95c9-5bba5b3834da_Canho9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\7c9dee4c-903f-4f41-a775-7f30fcb4621a_Canho8.jpg",
+      "PackagePath": "staticwebassets\\images\\7c9dee4c-903f-4f41-a775-7f30fcb4621a_Canho8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\81c30091-d817-412d-af28-8e9159ebd52e_Hoàng Anh Gold House.jpg",
+      "PackagePath": "staticwebassets\\images\\81c30091-d817-412d-af28-8e9159ebd52e_Hoàng Anh Gold House.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\834e0d5d-0daa-4b9f-ba99-5cc87165afd7_canho4.jpg",
+      "PackagePath": "staticwebassets\\images\\834e0d5d-0daa-4b9f-ba99-5cc87165afd7_canho4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\8409ec74-a388-46ac-b618-688492c5474f_Canho9.jpg",
+      "PackagePath": "staticwebassets\\images\\8409ec74-a388-46ac-b618-688492c5474f_Canho9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\853bb0b6-1bee-4570-b17c-46c9c06d4c48_canho3.jpg",
+      "PackagePath": "staticwebassets\\images\\853bb0b6-1bee-4570-b17c-46c9c06d4c48_canho3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\8a20e8de-1aca-4edc-a35c-8ec87b2236bd_834e0d5d-0daa-4b9f-ba99-5cc87165afd7_canho4.jpg",
+      "PackagePath": "staticwebassets\\images\\8a20e8de-1aca-4edc-a35c-8ec87b2236bd_834e0d5d-0daa-4b9f-ba99-5cc87165afd7_canho4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\8aa8384d-ef97-48c4-aafc-1bbd9b89ad52_Canho7.jpg",
+      "PackagePath": "staticwebassets\\images\\8aa8384d-ef97-48c4-aafc-1bbd9b89ad52_Canho7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\8f0d69ed-1dea-4601-9a63-307c71e0d5d4_Canho10.jpg",
+      "PackagePath": "staticwebassets\\images\\8f0d69ed-1dea-4601-9a63-307c71e0d5d4_Canho10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\9a1268ea-1250-4820-9adf-8ff7ba0e029d_canho2.jpg",
+      "PackagePath": "staticwebassets\\images\\9a1268ea-1250-4820-9adf-8ff7ba0e029d_canho2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\9fd3783f-d1a1-4f98-bc8f-b1347750b742_canho3.jpg",
+      "PackagePath": "staticwebassets\\images\\9fd3783f-d1a1-4f98-bc8f-b1347750b742_canho3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\CanHo.jpg",
+      "PackagePath": "staticwebassets\\images\\CanHo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\CanHo\\CanHo1.jpg",
+      "PackagePath": "staticwebassets\\images\\CanHo\\CanHo1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\CanHo\\Canho10.jpg",
+      "PackagePath": "staticwebassets\\images\\CanHo\\Canho10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\CanHo\\Canho5.jpg",
+      "PackagePath": "staticwebassets\\images\\CanHo\\Canho5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\CanHo\\Canho6.jpg",
+      "PackagePath": "staticwebassets\\images\\CanHo\\Canho6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\CanHo\\Canho7.jpg",
+      "PackagePath": "staticwebassets\\images\\CanHo\\Canho7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\CanHo\\Canho8.jpg",
+      "PackagePath": "staticwebassets\\images\\CanHo\\Canho8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\CanHo\\Canho9.jpg",
+      "PackagePath": "staticwebassets\\images\\CanHo\\Canho9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\CanHo\\canho2.jpg",
+      "PackagePath": "staticwebassets\\images\\CanHo\\canho2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\CanHo\\canho3.jpg",
+      "PackagePath": "staticwebassets\\images\\CanHo\\canho3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\CanHo\\canho4.jpg",
+      "PackagePath": "staticwebassets\\images\\CanHo\\canho4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\ChungCu.jpg",
+      "PackagePath": "staticwebassets\\images\\ChungCu.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\ChungCu\\City Garden.jpg",
+      "PackagePath": "staticwebassets\\images\\ChungCu\\City Garden.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\ChungCu\\Eco Green Saigon.jpg",
+      "PackagePath": "staticwebassets\\images\\ChungCu\\Eco Green Saigon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\ChungCu\\Hoàng Anh Gold House.jpg",
+      "PackagePath": "staticwebassets\\images\\ChungCu\\Hoàng Anh Gold House.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\ChungCu\\Richstar.jpg",
+      "PackagePath": "staticwebassets\\images\\ChungCu\\Richstar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\ChungCu\\Saigon Pearl.jpg",
+      "PackagePath": "staticwebassets\\images\\ChungCu\\Saigon Pearl.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\ChungCu\\Sunrise City.jpg",
+      "PackagePath": "staticwebassets\\images\\ChungCu\\Sunrise City.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\ChungCu\\The Estella.jpg",
+      "PackagePath": "staticwebassets\\images\\ChungCu\\The Estella.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\ChungCu\\The Manor.jpg",
+      "PackagePath": "staticwebassets\\images\\ChungCu\\The Manor.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\ChungCu\\The Vista An Phú.jpg",
+      "PackagePath": "staticwebassets\\images\\ChungCu\\The Vista An Phú.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\ChungCu\\Vinhome Central Park.png",
+      "PackagePath": "staticwebassets\\images\\ChungCu\\Vinhome Central Park.png"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\City Garden.jpg",
+      "PackagePath": "staticwebassets\\images\\City Garden.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\DichVu.jpg",
+      "PackagePath": "staticwebassets\\images\\DichVu.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Eco Green Saigon.jpg",
+      "PackagePath": "staticwebassets\\images\\Eco Green Saigon.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Eco Green Sài Gòn_c1d7bf9c-1e05-4950-ac3b-814451a50138.jpg",
+      "PackagePath": "staticwebassets\\images\\Eco Green Sài Gòn_c1d7bf9c-1e05-4950-ac3b-814451a50138.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Hoàng Anh Gold House.jpg",
+      "PackagePath": "staticwebassets\\images\\Hoàng Anh Gold House.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Orchard Hill_841d90a6-a1dc-43ca-b8ca-103aadd4d7eb.webp",
+      "PackagePath": "staticwebassets\\images\\Orchard Hill_841d90a6-a1dc-43ca-b8ca-103aadd4d7eb.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Richstar.jpg",
+      "PackagePath": "staticwebassets\\images\\Richstar.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\SUNRISE RIVERSIDE_ddaa5dfe-151f-4c89-a589-a7dd26987d92.jpg",
+      "PackagePath": "staticwebassets\\images\\SUNRISE RIVERSIDE_ddaa5dfe-151f-4c89-a589-a7dd26987d92.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Saigon Pearl.jpg",
+      "PackagePath": "staticwebassets\\images\\Saigon Pearl.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Sunrise City.jpg",
+      "PackagePath": "staticwebassets\\images\\Sunrise City.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\The Estella.jpg",
+      "PackagePath": "staticwebassets\\images\\The Estella.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\The Manor.jpg",
+      "PackagePath": "staticwebassets\\images\\The Manor.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\The Vista An Phú.jpg",
+      "PackagePath": "staticwebassets\\images\\The Vista An Phú.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Tintuc.jpg",
+      "PackagePath": "staticwebassets\\images\\Tintuc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Tintuc\\Eco Green Sài Gòn.jpg",
+      "PackagePath": "staticwebassets\\images\\Tintuc\\Eco Green Sài Gòn.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Tintuc\\Orchard Hill.webp",
+      "PackagePath": "staticwebassets\\images\\Tintuc\\Orchard Hill.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Tintuc\\SUNRISE RIVERSIDE.jpg",
+      "PackagePath": "staticwebassets\\images\\Tintuc\\SUNRISE RIVERSIDE.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Tintuc\\avatar1742540097917-1742540098589778770015.webp",
+      "PackagePath": "staticwebassets\\images\\Tintuc\\avatar1742540097917-1742540098589778770015.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Tintuc\\bluegem.webp",
+      "PackagePath": "staticwebassets\\images\\Tintuc\\bluegem.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Tintuc\\chung-cu201-1742452090848933760660-1742513781057-17425137811381657021757.webp",
+      "PackagePath": "staticwebassets\\images\\Tintuc\\chung-cu201-1742452090848933760660-1742513781057-17425137811381657021757.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Tintuc\\eco-retreat.jpg",
+      "PackagePath": "staticwebassets\\images\\Tintuc\\eco-retreat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Tintuc\\estella-heights.jpg",
+      "PackagePath": "staticwebassets\\images\\Tintuc\\estella-heights.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Tintuc\\saigonpear.webp",
+      "PackagePath": "staticwebassets\\images\\Tintuc\\saigonpear.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Tintuc\\smart-scaled3006202413321237-22320689-1742982406582-1742982407019616324617.webp",
+      "PackagePath": "staticwebassets\\images\\Tintuc\\smart-scaled3006202413321237-22320689-1742982406582-1742982407019616324617.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Tintuc\\the manor.webp",
+      "PackagePath": "staticwebassets\\images\\Tintuc\\the manor.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Tintuc\\the-river-thu-thiem-1-6903.jpg",
+      "PackagePath": "staticwebassets\\images\\Tintuc\\the-river-thu-thiem-1-6903.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Tintuc\\Độc quyền Xanh SM.jpg",
+      "PackagePath": "staticwebassets\\images\\Tintuc\\Độc quyền Xanh SM.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Vinhome Central Park.png",
+      "PackagePath": "staticwebassets\\images\\Vinhome Central Park.png"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\ab36a8c3-39cb-4aef-a46b-6a1b532174fa_Canho6.jpg",
+      "PackagePath": "staticwebassets\\images\\ab36a8c3-39cb-4aef-a46b-6a1b532174fa_Canho6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\aebe8bca-cf87-4cd2-b34b-baadda211aa9_26828658-6176-4f07-9159-e65e4f405470_canho4.jpg",
+      "PackagePath": "staticwebassets\\images\\aebe8bca-cf87-4cd2-b34b-baadda211aa9_26828658-6176-4f07-9159-e65e4f405470_canho4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\avatar1742540097917-1742540098589778770015_952f42f9-ba50-4b26-892b-a035cb55202c.webp",
+      "PackagePath": "staticwebassets\\images\\avatar1742540097917-1742540098589778770015_952f42f9-ba50-4b26-892b-a035cb55202c.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\b0f25ba0-ce95-49bd-b735-6501f438a494_3ba1cfa7-c3eb-4757-a323-33bcafaadf8b_Canho5.jpg",
+      "PackagePath": "staticwebassets\\images\\b0f25ba0-ce95-49bd-b735-6501f438a494_3ba1cfa7-c3eb-4757-a323-33bcafaadf8b_Canho5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\b608c8ee-0a54-4218-8cac-f821b69eaa2a_canho2.jpg",
+      "PackagePath": "staticwebassets\\images\\b608c8ee-0a54-4218-8cac-f821b69eaa2a_canho2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\bluegem_4c9c02eb-c2fe-4f27-9cd9-934c05ee1fe5.webp",
+      "PackagePath": "staticwebassets\\images\\bluegem_4c9c02eb-c2fe-4f27-9cd9-934c05ee1fe5.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\c1e57bbb-dd0f-48e2-9528-3657d84e998a_2a772c2e-50e1-4156-9881-e410fe9101b4_canho4.jpg",
+      "PackagePath": "staticwebassets\\images\\c1e57bbb-dd0f-48e2-9528-3657d84e998a_2a772c2e-50e1-4156-9881-e410fe9101b4_canho4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\c422b278-e1ac-4871-8830-2d6694727231_Canho10.jpg",
+      "PackagePath": "staticwebassets\\images\\c422b278-e1ac-4871-8830-2d6694727231_Canho10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\c8d8fdc8-f0b2-42af-9028-66a2e384790a_Canho5.jpg",
+      "PackagePath": "staticwebassets\\images\\c8d8fdc8-f0b2-42af-9028-66a2e384790a_Canho5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\ccc3dc24-6913-46e1-90af-adae605abc64_Canho5.jpg",
+      "PackagePath": "staticwebassets\\images\\ccc3dc24-6913-46e1-90af-adae605abc64_Canho5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\cd454f45-7cdb-4638-99a5-246ca5174ff2_Canho10.jpg",
+      "PackagePath": "staticwebassets\\images\\cd454f45-7cdb-4638-99a5-246ca5174ff2_Canho10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\chung-cu201-1742452090848933760660-1742513781057-17425137811381657021757_cee51c2f-3762-4498-8400-df60f1f0eafc.webp",
+      "PackagePath": "staticwebassets\\images\\chung-cu201-1742452090848933760660-1742513781057-17425137811381657021757_cee51c2f-3762-4498-8400-df60f1f0eafc.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\chuyendo.jpg",
+      "PackagePath": "staticwebassets\\images\\chuyendo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\contrung.jpg",
+      "PackagePath": "staticwebassets\\images\\contrung.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\da8b7f8b-e5ac-4caa-a781-02323af43b9d_0adea74e-7fe9-457a-bdb7-ed06ce8c1cd9_Canho10.jpg",
+      "PackagePath": "staticwebassets\\images\\da8b7f8b-e5ac-4caa-a781-02323af43b9d_0adea74e-7fe9-457a-bdb7-ed06ce8c1cd9_Canho10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\dad6deda-a298-45f1-82ad-781efbdc5c7f_Canho8.jpg",
+      "PackagePath": "staticwebassets\\images\\dad6deda-a298-45f1-82ad-781efbdc5c7f_Canho8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\dichvu\\chuyendo - Copy.jpg",
+      "PackagePath": "staticwebassets\\images\\dichvu\\chuyendo - Copy.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\dichvu\\chuyendo.jpg",
+      "PackagePath": "staticwebassets\\images\\dichvu\\chuyendo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\dichvu\\contrung.jpg",
+      "PackagePath": "staticwebassets\\images\\dichvu\\contrung.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\dichvu\\giat.jpg",
+      "PackagePath": "staticwebassets\\images\\dichvu\\giat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\dichvu\\lapdat.jpg",
+      "PackagePath": "staticwebassets\\images\\dichvu\\lapdat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\dichvu\\lapdatmaylanh",
+      "PackagePath": "staticwebassets\\images\\dichvu"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\dichvu\\lapdatmaylanh.webp",
+      "PackagePath": "staticwebassets\\images\\dichvu\\lapdatmaylanh.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\dichvu\\lapden.jpg",
+      "PackagePath": "staticwebassets\\images\\dichvu\\lapden.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\dichvu\\lapdo.jpg",
+      "PackagePath": "staticwebassets\\images\\dichvu\\lapdo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\dichvu\\maylanh.jpg",
+      "PackagePath": "staticwebassets\\images\\dichvu\\maylanh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\dichvu\\nuocdongbinh.jpg",
+      "PackagePath": "staticwebassets\\images\\dichvu\\nuocdongbinh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\dichvu\\sontuong.jpg",
+      "PackagePath": "staticwebassets\\images\\dichvu\\sontuong.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\dichvu\\suadien.jpg",
+      "PackagePath": "staticwebassets\\images\\dichvu\\suadien.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\dichvu\\suanuoc.webp",
+      "PackagePath": "staticwebassets\\images\\dichvu\\suanuoc.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\dichvu\\vesinh.jpg",
+      "PackagePath": "staticwebassets\\images\\dichvu\\vesinh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\e097afcf-be7e-46df-9d9c-549147c8cd9f_canho2.jpg",
+      "PackagePath": "staticwebassets\\images\\e097afcf-be7e-46df-9d9c-549147c8cd9f_canho2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\e1131a36-2484-4269-bc5e-a06875cb1257_CanHo1.jpg",
+      "PackagePath": "staticwebassets\\images\\e1131a36-2484-4269-bc5e-a06875cb1257_CanHo1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\e116c7ea-c090-4543-89f9-76be23ded557_Canho9.jpg",
+      "PackagePath": "staticwebassets\\images\\e116c7ea-c090-4543-89f9-76be23ded557_Canho9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\ea38c57b-71e7-44ce-b657-aab6ccb8831e_canho3.jpg",
+      "PackagePath": "staticwebassets\\images\\ea38c57b-71e7-44ce-b657-aab6ccb8831e_canho3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\ec7d9617-c03c-43d2-980a-85d2a9299edd_canho2.jpg",
+      "PackagePath": "staticwebassets\\images\\ec7d9617-c03c-43d2-980a-85d2a9299edd_canho2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\eco-retreat_18ef18a8-e4dc-47fa-a69d-a4a14a0a42ea.jpg",
+      "PackagePath": "staticwebassets\\images\\eco-retreat_18ef18a8-e4dc-47fa-a69d-a4a14a0a42ea.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\estella-heights_d89327ee-36bf-43e6-a0f7-0768e13eb639.jpg",
+      "PackagePath": "staticwebassets\\images\\estella-heights_d89327ee-36bf-43e6-a0f7-0768e13eb639.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\f15c0eb7-652e-45ef-aef2-fafb036679b5_Canho10.jpg",
+      "PackagePath": "staticwebassets\\images\\f15c0eb7-652e-45ef-aef2-fafb036679b5_Canho10.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\ff93088e-2ca5-4e7e-9ff1-e1e56e586568_Canho8.jpg",
+      "PackagePath": "staticwebassets\\images\\ff93088e-2ca5-4e7e-9ff1-e1e56e586568_Canho8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\giat.jpg",
+      "PackagePath": "staticwebassets\\images\\giat.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\lapdatmaylanh",
+      "PackagePath": "staticwebassets\\images"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\lapdatmaylanh.webp",
+      "PackagePath": "staticwebassets\\images\\lapdatmaylanh.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\lapden.jpg",
+      "PackagePath": "staticwebassets\\images\\lapden.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\lapdo.jpg",
+      "PackagePath": "staticwebassets\\images\\lapdo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\maylanh.jpg",
+      "PackagePath": "staticwebassets\\images\\maylanh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\nuocdongbinh.jpg",
+      "PackagePath": "staticwebassets\\images\\nuocdongbinh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\saigonpear_0dc01622-8e3d-4438-9cc9-b736676f31fd.webp",
+      "PackagePath": "staticwebassets\\images\\saigonpear_0dc01622-8e3d-4438-9cc9-b736676f31fd.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\smart-scaled3006202413321237-22320689-1742982406582-1742982407019616324617_0c80e69a-2e55-4add-a34f-9a4baa309bc2.webp",
+      "PackagePath": "staticwebassets\\images\\smart-scaled3006202413321237-22320689-1742982406582-1742982407019616324617_0c80e69a-2e55-4add-a34f-9a4baa309bc2.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\sontuong.jpg",
+      "PackagePath": "staticwebassets\\images\\sontuong.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\suanuoc.webp",
+      "PackagePath": "staticwebassets\\images\\suanuoc.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\the manor_0da89c87-7576-4315-84fd-383493723fd6.webp",
+      "PackagePath": "staticwebassets\\images\\the manor_0da89c87-7576-4315-84fd-383493723fd6.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\the-river-thu-thiem-1-6903_11de9de9-958d-461e-ab10-79693cc1393c.jpg",
+      "PackagePath": "staticwebassets\\images\\the-river-thu-thiem-1-6903_11de9de9-958d-461e-ab10-79693cc1393c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\tin tức vinhome1_f2e2bd17-c9c1-4a20-ab9e-b51072e12379.jpeg",
+      "PackagePath": "staticwebassets\\images\\tin tức vinhome1_f2e2bd17-c9c1-4a20-ab9e-b51072e12379.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\tintuc2_fd410068-85e0-4a83-8079-3df1ae6eaf13.webp",
+      "PackagePath": "staticwebassets\\images\\tintuc2_fd410068-85e0-4a83-8079-3df1ae6eaf13.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\vesinh.jpg",
+      "PackagePath": "staticwebassets\\images\\vesinh.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Độc quyền Xanh SM_f76304db-b28d-4528-8b78-ad99c6ba4b92.jpg",
+      "PackagePath": "staticwebassets\\images\\Độc quyền Xanh SM_f76304db-b28d-4528-8b78-ad99c6ba4b92.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\images\\Độc quyền Xanh SM_ffca709b-c2c1-4fba-b3b7-d8efeb567b06.jpg",
+      "PackagePath": "staticwebassets\\images\\Độc quyền Xanh SM_ffca709b-c2c1-4fba-b3b7-d8efeb567b06.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\0bf0c1d7-fb99-4912-98e4-e034336e58ea_08fdcff3-d072-4141-a604-3b51b995b604.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\0bf0c1d7-fb99-4912-98e4-e034336e58ea_08fdcff3-d072-4141-a604-3b51b995b604.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\18a413a9-ba6c-466c-b07f-fb9630df359d_gd.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\18a413a9-ba6c-466c-b07f-fb9630df359d_gd.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\196f8a05-fd16-4547-986a-a80a8bbb1e10_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\196f8a05-fd16-4547-986a-a80a8bbb1e10_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\1a84f27f-f3f8-47b5-a3db-028946da5501_6f574599-04e2-442f-bf89-7fe9a0e82a17.webp",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\1a84f27f-f3f8-47b5-a3db-028946da5501_6f574599-04e2-442f-bf89-7fe9a0e82a17.webp"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\1acf57c3-985a-43b6-913c-e5fe4b6a36f6_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\1acf57c3-985a-43b6-913c-e5fe4b6a36f6_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\1f392da8-0eb5-48b1-80bd-df5981c65940_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\1f392da8-0eb5-48b1-80bd-df5981c65940_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\25879099-2db7-44e5-8d4a-08d65032cf05_êêê3.png",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\25879099-2db7-44e5-8d4a-08d65032cf05_êêê3.png"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\27ad6f9f-1628-4825-982f-b6f3246050db_2025-02-12.png",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\27ad6f9f-1628-4825-982f-b6f3246050db_2025-02-12.png"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\2f569ac6-fdf1-4650-9bdb-eed0fdc2ecbd_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\2f569ac6-fdf1-4650-9bdb-eed0fdc2ecbd_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\41c676c6-8206-4d8c-b6d4-430d0fffad99_avt.png",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\41c676c6-8206-4d8c-b6d4-430d0fffad99_avt.png"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\443ea37a-c5ab-4448-9e9b-d88df7a19d45_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\443ea37a-c5ab-4448-9e9b-d88df7a19d45_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\4b6d1b34-a40b-418a-9bc6-c809666e912d_2025-02-12.png",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\4b6d1b34-a40b-418a-9bc6-c809666e912d_2025-02-12.png"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\60205b92-4d40-4545-bda3-d3e7b173212f_qr.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\60205b92-4d40-4545-bda3-d3e7b173212f_qr.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\65234d55-3444-4906-a286-112863a0bd00_2025-02-12.png",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\65234d55-3444-4906-a286-112863a0bd00_2025-02-12.png"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\6bdf01f7-6b8e-446a-a937-560c9fcd1840_z5648290486063_34e1aebfcccf7fb53f06172788cca215.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\6bdf01f7-6b8e-446a-a937-560c9fcd1840_z5648290486063_34e1aebfcccf7fb53f06172788cca215.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\6f589936-8bb9-455d-be07-4f3141c7cae5_qr.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\6f589936-8bb9-455d-be07-4f3141c7cae5_qr.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\73ad65d7-0ef6-4f5f-9d1e-17f837a90dee_logohutech.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\73ad65d7-0ef6-4f5f-9d1e-17f837a90dee_logohutech.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\77ed66e8-0b9a-4d05-82d0-7e71aeb5e918_4c2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\77ed66e8-0b9a-4d05-82d0-7e71aeb5e918_4c2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\79dea716-65ec-429b-9ca5-46c81f608d3d_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\79dea716-65ec-429b-9ca5-46c81f608d3d_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\82c981bc-69bf-48ef-8b47-4070f427cf95_z4548681871978_8d66e28e9a066a4595636872fbc5c08d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\82c981bc-69bf-48ef-8b47-4070f427cf95_z4548681871978_8d66e28e9a066a4595636872fbc5c08d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\94818792-86a5-4da5-9a11-98c4b1eced43_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\94818792-86a5-4da5-9a11-98c4b1eced43_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\9cc4c790-935e-4cb5-9e98-4fae4a7df582_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\9cc4c790-935e-4cb5-9e98-4fae4a7df582_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\c60de3f2-2998-44cc-ad26-4a045a9d999e_chungnhan_3.png",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\c60de3f2-2998-44cc-ad26-4a045a9d999e_chungnhan_3.png"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\c7530808-e233-4650-b96c-9a2cbfeb6107_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\c7530808-e233-4650-b96c-9a2cbfeb6107_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\cc3fd4fe-5888-433e-aeb9-9601190843f1_qr.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\cc3fd4fe-5888-433e-aeb9-9601190843f1_qr.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\d5c8956c-b841-409a-b70e-ea33fb3b0e35_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\d5c8956c-b841-409a-b70e-ea33fb3b0e35_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\e1d6a659-9fd1-45e7-9530-4956c1b49223_chungnha_5.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\e1d6a659-9fd1-45e7-9530-4956c1b49223_chungnha_5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\e4c18169-400c-4204-96af-5dc7ef6ead66_qr.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\e4c18169-400c-4204-96af-5dc7ef6ead66_qr.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\e90b0b4e-901a-45cd-9d8e-2543c5024209_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\e90b0b4e-901a-45cd-9d8e-2543c5024209_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\f0093c2c-6ccc-48e1-8f4e-a9ac47830c72_logohutech.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\f0093c2c-6ccc-48e1-8f4e-a9ac47830c72_logohutech.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\f0fe9301-f74c-4198-aedb-47e9d9f0440a_qr.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\f0fe9301-f74c-4198-aedb-47e9d9f0440a_qr.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\f29c5cd2-eb95-4b9f-8aed-f8a06c60df8b_qr.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\f29c5cd2-eb95-4b9f-8aed-f8a06c60df8b_qr.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\f7f203c1-c808-428d-becd-fcb0a10e3cbf_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\f7f203c1-c808-428d-becd-fcb0a10e3cbf_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg"
+    },
+    {
+      "Id": "C:\\Users\\duong\\Downloads\\PHQ-TECH-main (4)\\PHQ-TECH-main\\APT\\APT\\wwwroot\\uploads\\phananh\\ff2043fd-715c-4509-a4c1-7700271cab61_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\phananh\\ff2043fd-715c-4509-a4c1-7700271cab61_z4554616459793_cadb39179089edb900dd0734f7bd503c.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.APT.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.APT.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.APT.props",
+      "PackagePath": "build\\APT.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.APT.props",
+      "PackagePath": "buildMultiTargeting\\APT.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.APT.props",
+      "PackagePath": "buildTransitive\\APT.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,47 @@
+﻿@model QLCCCC.Models.DichVu
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi Tiết Dịch Vụ</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/dvdetails.css" asp-append-version="true" />
+   
+</head>
+<body>
+    <div class="container">
+        <div class="details-container">
+            <div class="service-name">@Model.TenDichVu</div>
+
+            <div class="image-gallery">
+                @if (Model.HinhAnhDichVus != null && Model.HinhAnhDichVus.Any(h => !string.IsNullOrEmpty(h.DuongDan)))
+                {
+                    @foreach (var hinhAnh in Model.HinhAnhDichVus.Where(h => !string.IsNullOrEmpty(h.DuongDan)))
+                    {
+                        <img src="@Url.Content(hinhAnh.DuongDan)" alt="Hình ảnh @Model.TenDichVu" />
+                    }
+                }
+                else
+                {
+                    <span>Không có hình ảnh</span>
+                }
+            </div>
+
+            <div class="description-section">
+                <h4>Mô Tả</h4>
+                <p>@Model.MoTa</p>
+            </div>
+
+            <div class="action-buttons">
+                <a asp-action="Index" class="btn btn-secondary btn-custom">Quay lại</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿@model QLCCCC.Models.DichVu
+<style>
+    .edit-apartment-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<div class="edit-apartment-container">
+    <h2>Chỉnh Sửa Dịch Vụ</h2>
+
+    <form asp-action="Edit" method="post" enctype="multipart/form-data">
+        @Html.AntiForgeryToken() <!-- Thêm antiforgery token -->
+        <input type="hidden" asp-for="ID" />
+
+        <div class="mb-3">
+            <label class="form-label">Tên Dịch Vụ</label>
+            <input asp-for="TenDichVu" class="form-control" required />
+            <span asp-validation-for="TenDichVu" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Mô Tả</label>
+            <textarea asp-for="MoTa" class="form-control"></textarea>
+            <span asp-validation-for="MoTa" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Giá</label>
+            <input asp-for="Gia" class="form-control" required />
+            <span asp-validation-for="Gia" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Hình Ảnh</label>
+            <input type="file" name="HinhAnhDichVu" class="form-control" />
+            @if (Model.HinhAnhDichVus != null && Model.HinhAnhDichVus.Count > 0)
+            {
+                <p><strong>Hình ảnh hiện tại:</strong></p>
+                <img src="@Model.HinhAnhDichVus.FirstOrDefault()?.DuongDan" alt="Hình ảnh dịch vụ" style="width: 100px; height: auto;" />
+            }
+        </div>
+
+        <button type="submit" class="btn btn-warning">Cập Nhật</button>
+        <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+    </form>
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" /> <!-- Thêm script validation -->
+    }
+</div>

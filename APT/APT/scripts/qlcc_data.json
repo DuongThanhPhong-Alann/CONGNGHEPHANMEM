@@ -1,0 +1,540 @@
+{
+  "Users": [
+    {
+      "ID": 1,
+      "HoTen": "hieu",
+      "Email": "l@gmail.com",
+      "LoaiNguoiDung": "Ban qu\u1EA3n l\u00FD"
+    },
+    {
+      "ID": 2,
+      "HoTen": "phong",
+      "Email": "m@gmail.com",
+      "LoaiNguoiDung": "C\u01B0 d\u00E2n"
+    },
+    {
+      "ID": 3,
+      "HoTen": "quang",
+      "Email": "h@gmail.com",
+      "LoaiNguoiDung": "Kh\u00E1ch"
+    }
+  ],
+  "Invoices": [
+    {
+      "ID": 2,
+      "ID_CanHo": 42,
+      "SoTien": 200000.00,
+      "TrangThai": "\u0110\u00E3 thanh to\u00E1n",
+      "CanHoMa": "2"
+    }
+  ],
+  "Complaints": [
+    {
+      "ID": 1,
+      "ID_NguoiDung": 2,
+      "NoiDung": "ch\u01B0a t\u1ED1t",
+      "TrangThai": "HoanThanh",
+      "NgayGui": "2025-05-06T21:24:16.3599133",
+      "PhanHoi": "okk b"
+    }
+  ],
+  "Services": [
+    {
+      "ID": 1,
+      "TenDichVu": "D?ch v? s?a ch?a di?n nu?c trong can h?",
+      "Gia": 200000.00
+    },
+    {
+      "ID": 2,
+      "TenDichVu": "D?ch v? v? sinh can h? d?nh k?",
+      "Gia": 500000.00
+    },
+    {
+      "ID": 3,
+      "TenDichVu": "D?ch v? l?p d?t v\u00E0 b?o tr\u00EC di?u h\u00F2a",
+      "Gia": 300000.00
+    },
+    {
+      "ID": 4,
+      "TenDichVu": "D?ch v? gi?t l\u00E0 v\u00E0 ?i d?",
+      "Gia": 20000.00
+    },
+    {
+      "ID": 5,
+      "TenDichVu": "D?ch v? cung c?p nu?c u?ng d\u00F3ng b\u00ECnh",
+      "Gia": 50000.00
+    },
+    {
+      "ID": 6,
+      "TenDichVu": "D?ch v? son v\u00E0 l\u00E0m m?i tu?ng can h?",
+      "Gia": 500000.00
+    },
+    {
+      "ID": 7,
+      "TenDichVu": "D?ch v? ki?m tra v\u00E0 x? l\u00FD c\u00F4n tr\u00F9ng",
+      "Gia": 400000.00
+    },
+    {
+      "ID": 8,
+      "TenDichVu": "D?ch v? h? tr? chuy?n d? trong can h?",
+      "Gia": 300000.00
+    },
+    {
+      "ID": 9,
+      "TenDichVu": "D?ch v? l?p d?t v\u00E0 b?o tr\u00EC h? th?ng d\u00E8n chi?u s\u00E1ng",
+      "Gia": 150000.00
+    },
+    {
+      "ID": 10,
+      "TenDichVu": "D?ch v? h? tr? l?p d?t n?i th?t",
+      "Gia": 400000.00
+    }
+  ],
+  "Residents": [
+    {
+      "ID": 1,
+      "ID_NguoiDung": 2,
+      "ID_CanHo": 42,
+      "CanHoMa": "2"
+    }
+  ],
+  "ChungCus": [
+    {
+      "ID": 1,
+      "Ten": "Ho\u00E0ng Anh Gold House",
+      "DiaChi": "456 \u0110\u01B0\u1EDDng L\u00EA V\u0103n S\u1EF9, Qu\u1EADn 3, TP. H\u1ED3 Ch\u00ED Minh"
+    },
+    {
+      "ID": 2,
+      "Ten": "Sunrise City",
+      "DiaChi": "58 \u0110\u01B0\u1EDDng Nguy\u1EC5n H\u1EEFu Th\u1ECD, Qu\u1EADn 7, TP. H\u1ED3 Ch\u00ED Minh"
+    },
+    {
+      "ID": 3,
+      "Ten": "Vinhome Central Park",
+      "DiaChi": "208 Nguy\u1EC5n H\u1EEFu C\u1EA3nh, Qu\u1EADn B\u00ECnh Th\u1EA1nh, TP. H\u1ED3 Ch\u00ED Minh"
+    },
+    {
+      "ID": 4,
+      "Ten": "Eco Green Saigon",
+      "DiaChi": "5 \u0110\u01B0\u1EDDng T\u00F4n Th\u1EA5t Thuy\u1EBFt, Qu\u1EADn 7, TP. H\u1ED3 Ch\u00ED Minh"
+    },
+    {
+      "ID": 5,
+      "Ten": "The Vista An Ph\u00FA",
+      "DiaChi": "628 \u0110\u01B0\u1EDDng Nguy\u1EC5n H\u1EEFu C\u1EA3nh, Qu\u1EADn 2, TP. H\u1ED3 Ch\u00ED Minh"
+    },
+    {
+      "ID": 6,
+      "Ten": "City Garden",
+      "DiaChi": "59 Ng\u00F4 T\u1EA5t T\u1ED1, B\u00ECnh Th\u1EA1nh, TP. H\u1ED3 Ch\u00ED Minh"
+    },
+    {
+      "ID": 7,
+      "Ten": "The Estella",
+      "DiaChi": "88 \u0110\u01B0\u1EDDng Song H\u00E0nh, Qu\u1EADn 2, TP. H\u1ED3 Ch\u00ED Minh"
+    },
+    {
+      "ID": 8,
+      "Ten": "Richstar",
+      "DiaChi": "7 \u0110\u01B0\u1EDDng H\u00F2a B\u00ECnh, Qu\u1EADn T\u00E2n Ph\u00FA, TP. H\u1ED3 Ch\u00ED Minh"
+    },
+    {
+      "ID": 9,
+      "Ten": "Saigon Pearl",
+      "DiaChi": "92 Nguy\u1EC5n H\u1EEFu C\u1EA3nh, B\u00ECnh Th\u1EA1nh, TP. H\u1ED3 Ch\u00ED Minh"
+    },
+    {
+      "ID": 10,
+      "Ten": "The Manor",
+      "DiaChi": "91 Nguy\u1EC5n H\u1EEFu C\u1EA3nh, B\u00ECnh Th\u1EA1nh, TP. H\u1ED3 Ch\u00ED Minh"
+    }
+  ],
+  "CanHos": [
+    {
+      "ID": 11,
+      "ID_ChungCu": 1,
+      "MaCan": "1",
+      "Gia": 2000000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 12,
+      "ID_ChungCu": 1,
+      "MaCan": "2",
+      "Gia": 2200000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 13,
+      "ID_ChungCu": 1,
+      "MaCan": "3",
+      "Gia": 2400000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 14,
+      "ID_ChungCu": 1,
+      "MaCan": "4",
+      "Gia": 2600000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 15,
+      "ID_ChungCu": 1,
+      "MaCan": "5",
+      "Gia": 2800000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 16,
+      "ID_ChungCu": 1,
+      "MaCan": "6",
+      "Gia": 3000000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 17,
+      "ID_ChungCu": 1,
+      "MaCan": "7",
+      "Gia": 3200000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 18,
+      "ID_ChungCu": 1,
+      "MaCan": "8",
+      "Gia": 3500000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 19,
+      "ID_ChungCu": 1,
+      "MaCan": "9",
+      "Gia": 4000000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 20,
+      "ID_ChungCu": 1,
+      "MaCan": "10",
+      "Gia": 4000000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 21,
+      "ID_ChungCu": 2,
+      "MaCan": "1",
+      "Gia": 4500000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 22,
+      "ID_ChungCu": 2,
+      "MaCan": "2",
+      "Gia": 4200000000.00,
+      "TrangThai": "\u0110\u00E3 b\u00E1n"
+    },
+    {
+      "ID": 23,
+      "ID_ChungCu": 2,
+      "MaCan": "3",
+      "Gia": 7500000.00,
+      "TrangThai": "Cho thu\u00EA"
+    },
+    {
+      "ID": 24,
+      "ID_ChungCu": 2,
+      "MaCan": "4",
+      "Gia": 8500000.00,
+      "TrangThai": "\u0110\u00E3 thu\u00EA"
+    },
+    {
+      "ID": 25,
+      "ID_ChungCu": 2,
+      "MaCan": "5",
+      "Gia": 3300000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 26,
+      "ID_ChungCu": 2,
+      "MaCan": "6",
+      "Gia": 3000000000.00,
+      "TrangThai": "\u0110\u00E3 b\u00E1n"
+    },
+    {
+      "ID": 27,
+      "ID_ChungCu": 2,
+      "MaCan": "7",
+      "Gia": 8000000.00,
+      "TrangThai": "Cho thu\u00EA"
+    },
+    {
+      "ID": 28,
+      "ID_ChungCu": 2,
+      "MaCan": "8",
+      "Gia": 8500000.00,
+      "TrangThai": "\u0110\u00E3 thu\u00EA"
+    },
+    {
+      "ID": 29,
+      "ID_ChungCu": 2,
+      "MaCan": "9",
+      "Gia": 2100000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 30,
+      "ID_ChungCu": 2,
+      "MaCan": "10",
+      "Gia": 1500000000.00,
+      "TrangThai": "\u0110\u00E3 b\u00E1n"
+    },
+    {
+      "ID": 31,
+      "ID_ChungCu": 3,
+      "MaCan": "1",
+      "Gia": 4500000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 32,
+      "ID_ChungCu": 3,
+      "MaCan": "2",
+      "Gia": 4200000000.00,
+      "TrangThai": "\u0110\u00E3 b\u00E1n"
+    },
+    {
+      "ID": 33,
+      "ID_ChungCu": 3,
+      "MaCan": "3",
+      "Gia": 8500000.00,
+      "TrangThai": "Cho thu\u00EA"
+    },
+    {
+      "ID": 34,
+      "ID_ChungCu": 3,
+      "MaCan": "4",
+      "Gia": 8500000.00,
+      "TrangThai": "\u0110\u00E3 thu\u00EA"
+    },
+    {
+      "ID": 35,
+      "ID_ChungCu": 3,
+      "MaCan": "5",
+      "Gia": 3300000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 36,
+      "ID_ChungCu": 4,
+      "MaCan": "1",
+      "Gia": 4500000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 37,
+      "ID_ChungCu": 4,
+      "MaCan": "2",
+      "Gia": 4200000000.00,
+      "TrangThai": "\u0110\u00E3 b\u00E1n"
+    },
+    {
+      "ID": 38,
+      "ID_ChungCu": 4,
+      "MaCan": "3",
+      "Gia": 8500000.00,
+      "TrangThai": "Cho thu\u00EA"
+    },
+    {
+      "ID": 39,
+      "ID_ChungCu": 4,
+      "MaCan": "4",
+      "Gia": 8500000.00,
+      "TrangThai": "\u0110\u00E3 thu\u00EA"
+    },
+    {
+      "ID": 40,
+      "ID_ChungCu": 4,
+      "MaCan": "5",
+      "Gia": 3300000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 41,
+      "ID_ChungCu": 5,
+      "MaCan": "1",
+      "Gia": 4500000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 42,
+      "ID_ChungCu": 5,
+      "MaCan": "2",
+      "Gia": 4200000000.00,
+      "TrangThai": "\u0110\u00E3 b\u00E1n"
+    },
+    {
+      "ID": 43,
+      "ID_ChungCu": 5,
+      "MaCan": "3",
+      "Gia": 8500000.00,
+      "TrangThai": "Cho thu\u00EA"
+    },
+    {
+      "ID": 44,
+      "ID_ChungCu": 5,
+      "MaCan": "4",
+      "Gia": 8500000.00,
+      "TrangThai": "\u0110\u00E3 thu\u00EA"
+    },
+    {
+      "ID": 45,
+      "ID_ChungCu": 5,
+      "MaCan": "5",
+      "Gia": 3300000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 46,
+      "ID_ChungCu": 7,
+      "MaCan": "1",
+      "Gia": 4500000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 47,
+      "ID_ChungCu": 7,
+      "MaCan": "2",
+      "Gia": 4200000000.00,
+      "TrangThai": "\u0110\u00E3 b\u00E1n"
+    },
+    {
+      "ID": 48,
+      "ID_ChungCu": 7,
+      "MaCan": "3",
+      "Gia": 8500000.00,
+      "TrangThai": "Cho thu\u00EA"
+    },
+    {
+      "ID": 49,
+      "ID_ChungCu": 7,
+      "MaCan": "4",
+      "Gia": 8500000.00,
+      "TrangThai": "\u0110\u00E3 thu\u00EA"
+    },
+    {
+      "ID": 50,
+      "ID_ChungCu": 7,
+      "MaCan": "5",
+      "Gia": 3300000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 51,
+      "ID_ChungCu": 8,
+      "MaCan": "1",
+      "Gia": 4500000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 52,
+      "ID_ChungCu": 8,
+      "MaCan": "2",
+      "Gia": 4200000000.00,
+      "TrangThai": "\u0110\u00E3 b\u00E1n"
+    },
+    {
+      "ID": 53,
+      "ID_ChungCu": 8,
+      "MaCan": "3",
+      "Gia": 8500000.00,
+      "TrangThai": "Cho thu\u00EA"
+    },
+    {
+      "ID": 54,
+      "ID_ChungCu": 8,
+      "MaCan": "4",
+      "Gia": 8500000.00,
+      "TrangThai": "\u0110\u00E3 thu\u00EA"
+    },
+    {
+      "ID": 55,
+      "ID_ChungCu": 8,
+      "MaCan": "5",
+      "Gia": 3300000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 56,
+      "ID_ChungCu": 9,
+      "MaCan": "1",
+      "Gia": 4500000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 57,
+      "ID_ChungCu": 9,
+      "MaCan": "2",
+      "Gia": 4200000000.00,
+      "TrangThai": "\u0110\u00E3 b\u00E1n"
+    },
+    {
+      "ID": 58,
+      "ID_ChungCu": 9,
+      "MaCan": "3",
+      "Gia": 8500000.00,
+      "TrangThai": "Cho thu\u00EA"
+    },
+    {
+      "ID": 59,
+      "ID_ChungCu": 9,
+      "MaCan": "4",
+      "Gia": 8500000.00,
+      "TrangThai": "\u0110\u00E3 thu\u00EA"
+    },
+    {
+      "ID": 60,
+      "ID_ChungCu": 9,
+      "MaCan": "5",
+      "Gia": 3300000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 61,
+      "ID_ChungCu": 10,
+      "MaCan": "1",
+      "Gia": 4500000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    },
+    {
+      "ID": 62,
+      "ID_ChungCu": 10,
+      "MaCan": "2",
+      "Gia": 4200000000.00,
+      "TrangThai": "\u0110\u00E3 b\u00E1n"
+    },
+    {
+      "ID": 63,
+      "ID_ChungCu": 10,
+      "MaCan": "3",
+      "Gia": 8500000.00,
+      "TrangThai": "Cho thu\u00EA"
+    },
+    {
+      "ID": 64,
+      "ID_ChungCu": 10,
+      "MaCan": "4",
+      "Gia": 8500000.00,
+      "TrangThai": "\u0110\u00E3 thu\u00EA"
+    },
+    {
+      "ID": 65,
+      "ID_ChungCu": 10,
+      "MaCan": "5",
+      "Gia": 3300000000.00,
+      "TrangThai": "\u0110ang b\u00E1n"
+    }
+  ]
+}

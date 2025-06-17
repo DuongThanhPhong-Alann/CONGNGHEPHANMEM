@@ -1,0 +1,38 @@
+﻿@model QLCCCC.Models.PhanAnh
+<style>
+    .edit-apartment-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<div class="edit-apartment-container">
+    <h1>Phản hồi phản ánh</h1>
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Người gửi: @Model.NguoiDung?.HoTen</h5>
+            <p class="card-text"><strong>Nội dung phản ánh:</strong> @Model.NoiDung</p>
+            <p class="card-text"><strong>Trạng thái hiện tại:</strong> @Model.TrangThai</p> <!-- Hiển thị trạng thái -->
+            <p class="card-text"><strong>Ngày gửi:</strong> @Model.NgayGui.ToString("dd/MM/yyyy HH:mm")</p> <!-- Hiển thị ngày gửi -->
+
+            <form asp-action="Reply" method="post">
+                @Html.AntiForgeryToken() <!-- Bắt buộc để tránh lỗi CSRF -->
+                <input type="hidden" name="id" value="@Model.ID" />
+                <div class="form-group">
+                    <label for="phanHoi">Phản hồi:</label>
+                    <textarea class="form-control" id="phanHoi" name="phanHoi" rows="3" required>@Model.PhanHoi</textarea>
+                </div>
+                @if (!string.IsNullOrEmpty(Model.PhanHoi))
+                {
+                    <p class="text-muted"><strong>Phản hồi trước đó:</strong> @Model.PhanHoi</p>
+                }
+                <button type="submit" class="btn btn-primary mt-3">Gửi phản hồi</button>
+                <a asp-action="Index" class="btn btn-secondary mt-3">Quay lại</a>
+            </form>
+        </div>
+    </div>
+</div>

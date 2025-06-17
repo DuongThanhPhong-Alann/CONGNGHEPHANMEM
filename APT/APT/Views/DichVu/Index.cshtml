@@ -1,0 +1,201 @@
+﻿@model IEnumerable<QLCCCC.Models.DichVu>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khám Phá Các Dịch Vụ - QLCCCC</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/dvindex.css" asp-append-version="true" />
+
+</head>
+<body>
+    <div class="container">
+        <!-- Container cho hình ảnh và tiêu đề -->
+        <div class="header-container">
+            <img src="~/images/DichVu.jpg" alt="Hình ảnh đầu trang Dịch Vụ" class="header-image" />
+            <h2 class="header-title">Khám Phá Các Dịch Vụ</h2>
+        </div>
+
+        <!-- Chỉ hiển thị nút "Thêm mới" cho Ban quản lý -->
+        @if (User.IsInRole("Ban quản lý"))
+        {
+            <a asp-action="Create" class="btn btn-primary mb-3">Thêm Mới</a>
+        }
+
+        <!-- Chỉ hiển thị bảng danh sách dịch vụ cho Ban quản lý -->
+        @if (User.IsInRole("Ban quản lý"))
+        {
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Tên Dịch Vụ</th>
+                        <th>Mô Tả</th>
+                        <th>Giá</th>
+                        <th>Hình Ảnh</th>
+                        <th>Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var dichVu in Model)
+                    {
+                        <tr>
+                            <td>@dichVu.ID</td>
+                            <td>@dichVu.TenDichVu</td>
+                            <td>@dichVu.MoTa</td>
+                            <td>@dichVu.Gia.ToString("C0", new System.Globalization.CultureInfo("vi-VN"))</td>
+                            <td>
+                                @if (dichVu.HinhAnhDichVus != null && dichVu.HinhAnhDichVus.Count > 0)
+                                {
+                                    <img src="@dichVu.HinhAnhDichVus.FirstOrDefault()?.DuongDan" alt="Hình ảnh dịch vụ" style="width: 100px; height: auto;" />
+                                }
+                                else
+                                {
+                                    <span>Không có hình</span>
+                                }
+                            </td>
+                            <td>
+                                <a asp-action="Details" asp-route-id="@dichVu.ID" class="btn btn-info btn-sm">Chi tiết</a>
+                                <a asp-action="Edit" asp-route-id="@dichVu.ID" class="btn btn-warning btn-sm">Chỉnh sửa</a>
+                                <a asp-action="Delete" asp-route-id="@dichVu.ID" class="btn btn-danger btn-sm">Xóa</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+
+        <!-- Khu vực hiển thị dịch vụ dưới dạng ô vuông với hình ảnh làm nền -->
+        <div class="service-squares">
+            @foreach (var dichVu in Model)
+            {
+                <a asp-action="Details" asp-route-id="@dichVu.ID" class="service-box">
+                    @if (dichVu.HinhAnhDichVus != null && dichVu.HinhAnhDichVus.Count > 0)
+                    {
+                        <img src="@dichVu.HinhAnhDichVus.FirstOrDefault()?.DuongDan" alt="Hình ảnh @dichVu.TenDichVu" class="service-box-background" />
+                    }
+                    else
+                    {
+                        <img src="~/images/default-service.jpg" alt="Hình ảnh mặc định" class="service-box-background" />
+                    }
+                    <div class="service-box-content">
+                        <div>
+                            <h5>@dichVu.TenDichVu</h5>
+                            <p><strong>Mô Tả:</strong> @dichVu.MoTa</p>
+                            @if (User.Identity.IsAuthenticated && (User.IsInRole("Cư dân") || User.IsInRole("Ban quản lý")))
+                            {
+                                <p><strong>Giá:</strong> @dichVu.Gia.ToString("C0", new System.Globalization.CultureInfo("vi-VN"))</p>
+                            }
+                        </div>
+                        @if (User.IsInRole("Cư dân"))
+                        {
+                            <div>
+                                <button type="button" class="btn btn-success btn-sm square-register-service" data-id="@dichVu.ID">Đăng ký</button>
+                            </div>
+                        }
+                    </div>
+                </a>
+            }
+        </div>
+
+        <!-- Modal hiển thị thông tin đăng ký và xác nhận -->
+        <div class="modal fade" id="confirmModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Xác nhận Đăng ký Dịch Vụ</h5>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>Dịch vụ:</strong> <span id="modalTenDichVu"></span></p>
+                        <p><strong>Họ tên:</strong> <span id="modalHoTen"></span></p>
+                        <p><strong>Email:</strong> <span id="modalEmail"></span></p>
+                        <p><strong>Số điện thoại:</strong> <span id="modalSoDienThoai"></span></p>
+                        <p><strong>Mã căn hộ:</strong> <span id="modalMaCan"></span></p>
+                        <p><strong>Tên chung cư:</strong> <span id="modalTenChungCu"></span></p>
+                        <p><strong>Số tiền:</strong> <span id="modalSoTien"></span></p>
+                        <p>Bạn có chắc chắn muốn đăng ký dịch vụ này không?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" id="confirmRegister">Xác nhận</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Quay lại</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var registerData;
+
+            $('.square-register-service').click(function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                handleRegister($(this).data('id'));
+            });
+
+            function handleRegister(dichVuId) {
+                $.ajax({
+                    url: '/DichVu/RegisterService',
+                    type: 'GET',
+                    data: { id: dichVuId },
+                    success: function (response) {
+                        if (response.success) {
+                            registerData = {
+                                dichVuId: response.dichVuId,
+                                idCanHo: response.idCanHo,
+                                idChungCu: response.idChungCu,
+                                soTien: response.soTien
+                            };
+
+                            $('#modalTenDichVu').text(response.tenDichVu);
+                            $('#modalHoTen').text(response.hoTen);
+                            $('#modalEmail').text(response.email);
+                            $('#modalSoDienThoai').text(response.soDienThoai);
+                            $('#modalMaCan').text(response.maCan);
+                            $('#modalTenChungCu').text(response.tenChungCu);
+                            $('#modalSoTien').text(response.soTien.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' }));
+
+                            $('#confirmModal').modal('show');
+                        } else {
+                            alert(response.message);
+                        }
+                    },
+                    error: function () {
+                        alert('Đã xảy ra lỗi khi lấy thông tin đăng ký.');
+                    }
+                });
+            }
+
+            $('#confirmRegister').click(function () {
+                $.ajax({
+                    url: '/DichVu/ConfirmRegisterService',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    headers: {
+                        'RequestVerificationToken': $('input[name="__RequestVerificationToken"]').val()
+                    },
+                    data: JSON.stringify(registerData),
+                    success: function (response) {
+                        if (response.success) {
+                            alert(response.message);
+                            $('#confirmModal').modal('hide');
+                        } else {
+                            alert(response.message);
+                        }
+                    },
+                    error: function () {
+                        alert('Đã xảy ra lỗi khi xác nhận đăng ký.');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

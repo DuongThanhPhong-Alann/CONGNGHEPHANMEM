@@ -1,0 +1,97 @@
+﻿@model QLCCCC.Models.CuDan
+<style>
+    .edit-apartment-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<div class="edit-apartment-container">
+    <h2>Chỉnh Sửa Cư Dân</h2>
+
+    <form asp-action="Edit" method="post">
+        <input type="hidden" asp-for="ID" />
+
+        <div class="mb-3">
+            <label class="form-label">Người Dùng</label>
+            <select asp-for="ID_NguoiDung" class="form-control" asp-items="ViewBag.NguoiDungs"></select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Chung Cư</label>
+            <select id="ID_ChungCu" class="form-control" name="ID_ChungCu">
+                <option value="">-- Chọn Chung Cư --</option>
+                @foreach (var chungCu in (ViewBag.ChungCus as IEnumerable<SelectListItem>) ?? new List<SelectListItem>())
+                {
+                    <option value="@chungCu.Value" selected="@(chungCu.Value == ViewBag.SelectedChungCuId?.ToString() ? "selected" : null)">
+                        @chungCu.Text
+                    </option>
+                }
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Căn Hộ</label>
+            <select asp-for="ID_CanHo" class="form-control" id="ID_CanHo" name="ID_CanHo">
+                <option value="">-- Chọn Căn Hộ --</option>
+                @foreach (var canHo in (ViewBag.CanHos as IEnumerable<SelectListItem>) ?? new List<SelectListItem>())
+                {
+                    <option value="@canHo.Value" selected="@(canHo.Value == Model.ID_CanHo.ToString() ? "selected" : null)">
+                        @canHo.Text
+                    </option>
+                }
+            </select>
+        </div>
+
+        <button type="submit" class="btn custom-btn-blue">Cập Nhật</button>
+
+    </form>
+
+    <!-- AJAX để load danh sách Căn Hộ -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#ID_ChungCu').change(function () {
+                var chungCuId = $(this).val();
+                if (chungCuId) {
+                    $.ajax({
+                        url: '/CuDan/GetCanHoByChungCu',
+                        type: 'GET',
+                        data: { chungCuId: chungCuId },
+                        dataType: 'json',
+                        success: function (data) {
+                            $('#ID_CanHo').empty().append('<option value="">-- Chọn Căn Hộ --</option>');
+                            $.each(data, function (index, item) {
+                                $('#ID_CanHo').append('<option value="' + item.id + '">' + item.maCan + '</option>');
+                            });
+                        },
+                        error: function () {
+                            $('#ID_CanHo').empty().append('<option value="">Lỗi khi tải dữ liệu</option>');
+                        }
+                    });
+                } else {
+                    $('#ID_CanHo').empty().append('<option value="">Vui lòng chọn Chung Cư trước</option>');
+                }
+            });
+        });
+    </script>
+    <style>
+        .custom-btn-blue {
+            background-color: #0288d1; /* Màu xanh dương đậm */
+            color: #fff; /* Màu chữ trắng */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+            .custom-btn-blue:hover {
+                background-color: #0277bd; /* Màu xanh dương đậm hơn khi hover */
+            }
+
+    </style>
+ </div>

@@ -1,0 +1,162 @@
+﻿@model QLCCCC.Models.CanHo
+
+<style>
+    .edit-apartment-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<div class="edit-apartment-container">
+    <h2>Thêm Căn Hộ Mới</h2>
+
+    <div>
+        @Html.ValidationSummary(true, "", new { @class = "alert alert-danger" })
+    </div>
+
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="MaCan">Mã Căn</label>
+            <input type="text" class="form-control" asp-for="MaCan" required />
+            <span asp-validation-for="MaCan" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="ID_ChungCu">Chọn Chung Cư</label>
+            <select class="form-control" asp-for="ID_ChungCu" asp-items="@(new SelectList(ViewBag.ChungCus, "ID", "Ten"))">
+                <option value="">-- Chọn chung cư --</option>
+            </select>
+            <span asp-validation-for="ID_ChungCu" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="DienTich">Diện Tích (m²)</label>
+            <input type="number" class="form-control" asp-for="DienTich" min="10" required />
+            <span asp-validation-for="DienTich" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="SoPhong">Số Phòng</label>
+            <input type="number" class="form-control" asp-for="SoPhong" min="1" required />
+            <span asp-validation-for="SoPhong" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="Gia">Giá (VNĐ)</label>
+            <input type="number" class="form-control" asp-for="Gia" min="1000000" required />
+            <span asp-validation-for="Gia" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="TrangThai">Trạng Thái</label>
+            <select class="form-control" asp-for="TrangThai" required>
+                <option value="">-- Chọn trạng thái --</option>
+                <option value="Đang bán">Đang bán</option>
+                <option value="Đã bán">Đã bán</option>
+                <option value="Cho thuê">Cho thuê</option>
+                <option value="Đã thuê">Đã thuê</option>
+            </select>
+            <span asp-validation-for="TrangThai" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="MoTa">Mô Tả</label>
+            <textarea class="form-control" asp-for="MoTa" rows="4" placeholder="Nhập mô tả căn hộ"></textarea>
+            <span asp-validation-for="MoTa" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label>URL Hình Ảnh 360</label>
+            <div id="urlContainer">
+                <div class="input-group mb-2">
+                    <input type="url" class="form-control" name="URLs" placeholder="Nhập đường dẫn URL" oninput="updatePreview(this)" />
+                    <div class="input-group-append">
+                        <button type="button" class="btn btn-danger" onclick="removeUrl(this)">Xóa</button>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-success mt-2" onclick="addUrl()">Thêm URL</button>
+            <div id="image360Preview" class="mt-2" style="display: none;">
+                <label>Hình Ảnh 360:</label>
+                <iframe id="iframe360" style="width: 100%; height: 400px;" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        @if (Model?.HinhAnhCanHos != null && Model.HinhAnhCanHos.Any())
+        {
+            <div>
+                <label>Hình Ảnh Hiện Tại:</label><br />
+                @foreach (var hinhAnh in Model.HinhAnhCanHos)
+                {
+                    <img src="@hinhAnh.DuongDan" alt="Hình ảnh căn hộ" style="width: 150px; height: auto; margin-right: 10px;" />
+                }
+            </div>
+        }
+
+        <div class="form-group">
+            <label for="HinhAnh">Chọn Hình Ảnh</label>
+            <input type="file" class="form-control" name="HinhAnh" id="HinhAnh" accept="image/*" multiple />
+            <small class="text-muted">Chọn nhiều ảnh bằng cách giữ phím Ctrl</small>
+            <div id="previewImages" class="mt-2"></div>
+        </div>
+
+        <br />
+
+        <button type="submit" class="btn btn-primary">Lưu</button>
+        <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+    </form>
+
+    <script>
+        function addUrl() {
+            let container = document.getElementById("urlContainer");
+            let newInputGroup = document.createElement("div");
+            newInputGroup.className = "input-group mb-2";
+            newInputGroup.innerHTML = `
+                <input type="url" class="form-control" name="URLs" placeholder="Nhập đường dẫn URL" oninput="updatePreview(this)" />
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-danger" onclick="removeUrl(this)">Xóa</button>
+                </div>
+            `;
+            container.appendChild(newInputGroup);
+        }
+
+        function removeUrl(button) {
+            button.closest(".input-group").remove();
+            updatePreview(null); // Reset preview if no URL remains
+        }
+
+        function updatePreview(input) {
+            let previewDiv = document.getElementById("image360Preview");
+            let iframe = document.getElementById("iframe360");
+            let urlInputs = document.querySelectorAll('input[name="URLs"]');
+            let firstUrl = Array.from(urlInputs).find(input => input.value)?.value;
+
+            if (firstUrl) {
+                iframe.src = firstUrl;
+                previewDiv.style.display = "block";
+            } else {
+                previewDiv.style.display = "none";
+            }
+        }
+
+        document.getElementById("HinhAnh").addEventListener("change", function(event) {
+            let preview = document.getElementById("previewImages");
+            preview.innerHTML = "";
+
+            for (let file of event.target.files) {
+                let reader = new FileReader();
+                reader.onload = function(e) {
+                    let img = document.createElement("img");
+                    img.src = e.target.result;
+                    img.style.width = "100px";
+                    img.style.margin = "5px";
+                    preview.appendChild(img);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+</div>

@@ -1,0 +1,54 @@
+﻿@model QLCCCC.Models.HoaDonDichVu
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh Sách Hóa Đơn Dịch Vụ - QLCCCC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/hdduyet.css" asp-append-version="true" />
+    
+</head>
+<body>
+    @{
+        ViewData["Title"] = "Duyệt hóa đơn";
+    }
+
+    <h1 class="text-center text-primary mb-4">Duyệt Hóa Đơn</h1>
+
+    <div class="container">
+        <h4 class="text-info">Thông tin Hóa Đơn</h4>
+        <hr class="border-info" />
+
+        <dl class="row">
+            <dt class="col-sm-3 font-weight-bold">Căn hộ</dt>
+            <dd class="col-sm-9">@Model.CanHo?.MaCan</dd>
+
+            <dt class="col-sm-3 font-weight-bold">Chung cư</dt>
+            <dd class="col-sm-9">@Model.ChungCu?.Ten</dd>
+
+            <dt class="col-sm-3 font-weight-bold">Số tiền</dt>
+            <dd class="col-sm-9 text-success">@Model.SoTien.ToString("N0") VNĐ</dd>
+
+            <dt class="col-sm-3 font-weight-bold">Ngày lập</dt>
+            <dd class="col-sm-9">@Model.NgayLap.ToString("dd/MM/yyyy")</dd>
+        </dl>
+
+        <form asp-action="Duyet" method="post" class="mt-4">
+            <input type="hidden" asp-for="ID" />
+            <div class="form-group">
+                <label for="trangThai" class="font-weight-semibold">Trạng thái duyệt</label>
+                <select class="form-control form-control-lg" name="trangThai" id="trangThai" required>
+                    <option value="">-- Chọn trạng thái --</option>
+                    <option value="Đã thanh toán">Đã thanh toán</option>
+                    <option value="Chưa thanh toán">Chưa thanh toán</option>
+                    <option value="Quá hạn thanh toán">Quá hạn thanh toán</option>
+                </select>
+            </div>
+
+            <div class="d-flex justify-content-between mt-4">
+                <button type="submit" class="btn btn-success btn-lg px-4 py-2">Cập nhật</button>
+                <a asp-action="Index" class="btn btn-secondary btn-lg px-4 py-2">Quay lại</a>
+            </div>
+        </form>
+    </div>
+</body>

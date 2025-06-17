@@ -1,0 +1,100 @@
+﻿@model IEnumerable<QLCCCC.Models.HoaDonDichVu>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh Sách Hóa Đơn Dịch Vụ - QLCCCC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/hdindex.css" asp-append-version="true" />
+    
+</head>
+<body>
+    <div class="container">
+        <h2 class="header-title">Danh Sách Hóa Đơn Dịch Vụ</h2>
+
+        <div class="table-container">
+            @if (User.IsInRole("Ban quản lý"))
+            {
+                <a asp-action="Create" class="btn-create">Thêm Mới</a>
+            }
+
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Chung Cư</th>
+                        <th>Căn Hộ</th>
+                        <th>Ngày Lập</th>
+                        <th>Tổng Tiền</th>
+                        <th>Trạng Thái</th>
+                        <th>Dịch Vụ</th>
+                        <th>Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@(item.CanHo?.ChungCu?.Ten ?? "Không có")</td>
+                            <td>@(item.CanHo?.MaCan ?? "Không có")</td>
+                            <td>@item.NgayLap.ToShortDateString()</td>
+                            <td>@item.SoTien.ToString("N0") đ</td>
+                            <td class="status-cell" data-id="@item.ID">
+                                @if (item.TrangThai == "Đã thanh toán")
+                                {
+                                    <span class="badge bg-success">@item.TrangThai</span>
+                                }
+                                else if (item.TrangThai == "Quá hạn thanh toán")
+                                {
+                                    <span class="badge bg-danger">@item.TrangThai</span>
+                                }
+                                else
+                                {
+                                    <span class="badge bg-warning">@item.TrangThai</span>
+                                }
+                            </td>
+
+                            <td>
+                                @if (item.HoaDonDichVu_DichVus != null && item.HoaDonDichVu_DichVus.Any())
+                                {
+                                    <ul>
+                                        @foreach (var hdv in item.HoaDonDichVu_DichVus)
+                                        {
+                                            <li>@hdv.DichVu?.TenDichVu</li>
+                                        }
+                                    </ul>
+                                }
+                                else
+                                {
+                                    <span>Không có dịch vụ</span>
+                                }
+                            </td>
+                            <td class="action-buttons">
+                                <a asp-action="Detail" asp-route-id="@item.ID" class="btn btn-info btn-sm">Chi Tiết</a>
+
+                                @if (User.IsInRole("Ban quản lý"))
+                                {
+                                    <a asp-action="Duyet" asp-route-id="@item.ID" class="btn btn-warning btn-sm">Duyệt</a>
+                                
+                                }
+
+                                @if (User.IsInRole("Cư dân") && item.TrangThai == "Chưa thanh toán")
+                                {
+                                    <form asp-action="ThanhToan" method="post" style="display:inline;">
+                                        <input type="hidden" name="id" value="@item.ID" />
+                                    </form>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

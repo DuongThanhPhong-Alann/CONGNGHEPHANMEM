@@ -1,0 +1,48 @@
+﻿@model QLCCCC.Models.TinTuc
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@Model.TieuDe - Chi Tiết Tin Tức</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/ttdetails.css" asp-append-version="true" />
+   
+</head>
+<body>
+    <div class="container">
+        <div class="news-container">
+            <h1 class="news-title">@Model.TieuDe</h1>
+
+            <div class="news-meta">
+                <p><strong>Ngày Đăng:</strong> @Model.NgayDang.ToString("dd/MM/yyyy")</p>
+                <p><strong>Ngày Sự Kiện:</strong> @(Model.NgaySuKien?.ToString("dd/MM/yyyy") ?? "Không có sự kiện")</p>
+            </div>
+
+            <div class="news-image">
+                @if (!string.IsNullOrEmpty(Model.HinhAnh))
+                {
+                    <img src="@Url.Content(Model.HinhAnh)" alt="Hình ảnh tin tức" />
+                }
+                else
+                {
+                    <span>Không có hình ảnh</span>
+                }
+            </div>
+
+            <div class="news-content">
+                <p>@Model.NoiDung</p>
+            </div>
+
+            <div class="action-buttons">
+                <a asp-action="Index" class="btn btn-secondary btn-custom">Quay Lại</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

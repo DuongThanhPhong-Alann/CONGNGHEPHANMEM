@@ -1,0 +1,38 @@
+﻿@model QLCCCC.Models.HoaDonDichVu
+<style>
+    .edit-apartment-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<div class="edit-apartment-container">
+<h2>Bạn có chắc chắn muốn xóa hóa đơn này không?</h2>
+
+<p><strong>ID:</strong> @Model.ID</p>
+<p><strong>Căn hộ:</strong> @Model.CanHo?.MaCan</p>
+<p><strong>Chung cư:</strong> @Model.ChungCu?.Ten</p>
+<p>
+    <strong>Dịch vụ:</strong>
+    @if (Model.HoaDonDichVu_DichVus != null && Model.HoaDonDichVu_DichVus.Any())
+    {
+        @string.Join(", ", Model.HoaDonDichVu_DichVus.Select(d => d.ID_DichVu))
+    }
+    else
+    {
+        <span>Không có dịch vụ</span>
+    }
+</p>
+<p><strong>Ngày lập:</strong> @Model.NgayLap.ToString("dd/MM/yyyy")</p>
+<p><strong>Số tiền:</strong> @Model.SoTien.ToString("N0") đ</p>
+<p><strong>Trạng thái:</strong> @Model.TrangThai</p>
+
+<form asp-action="DeleteConfirmed">
+    <input type="hidden" asp-for="ID" />
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>
+</div>

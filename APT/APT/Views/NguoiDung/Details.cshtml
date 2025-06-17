@@ -1,0 +1,27 @@
+﻿@model QLCCCC.Models.NguoiDung
+<style>
+    .edit-apartment-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<div class="edit-apartment-container">
+<h2>User Details</h2>
+
+<div>
+    <b>Ho Ten:</b> @Model.HoTen
+    <br />
+    <b>So Dien Thoai:</b> @Model.SoDienThoai
+    <br />
+    <b>Email:</b> @Model.Email
+    <br />
+    <b>Loai Nguoi Dung:</b> @Model.LoaiNguoiDung
+</div>
+
+<a href="@Url.Action("Edit", new { id = Model.ID })" class="btn btn-primary">Edit</a>
+<a href="@Url.Action("Index")" class="btn btn-secondary">Back to List</a>
+</div>

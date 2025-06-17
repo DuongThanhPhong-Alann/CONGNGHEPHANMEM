@@ -1,0 +1,36 @@
+﻿@model QLCCCC.Models.PhanAnh
+<style>
+    .edit-apartment-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<div class="edit-apartment-container">
+    <h1>Tạo phản ánh mới</h1>
+    <form asp-action="Create" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+            <label asp-for="NoiDung" class="control-label"></label>
+            <textarea asp-for="NoiDung" class="form-control"></textarea>
+            <span asp-validation-for="NoiDung" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="HinhAnhFile">Tải ảnh lên (nếu có):</label>
+            <input type="file" name="HinhAnhFile" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label for="HinhAnhLink">Hoặc nhập URL ảnh:</label>
+            <input type="text" name="HinhAnhLink" class="form-control" placeholder="https://example.com/image.jpg" />
+        </div>
+
+        <div class="form-group mt-2">
+            <input type="submit" value="Tạo" class="btn btn-primary" />
+        </div>
+        @Html.AntiForgeryToken()
+    </form>
+</div>

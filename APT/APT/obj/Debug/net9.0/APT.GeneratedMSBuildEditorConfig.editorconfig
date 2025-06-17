@@ -1,0 +1,285 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = APT
+build_property.RootNamespace = APT
+build_property.ProjectDir = C:\Users\duong\Downloads\PHQ-TECH-main\PHQ-TECH-main\APT\APT\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = C:\Users\duong\Downloads\PHQ-TECH-main\PHQ-TECH-main\APT\APT
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/Auth/ChangePasswordAfterReset.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxDaGFuZ2VQYXNzd29yZEFmdGVyUmVzZXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/Auth/FaceLogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxGYWNlTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/Auth/ForgotPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxGb3Jnb3RQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/Auth/UserProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxVc2VyUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/CanHo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuSG9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/CanHo/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuSG9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/CanHo/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuSG9cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/CanHo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuSG9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/CanHo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FuSG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/ChuHo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1SG9cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/ChuHo/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1SG9cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/ChuHo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1SG9cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/ChuHo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1SG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/ChungCu/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1bmdDdVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/ChungCu/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1bmdDdVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/ChungCu/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1bmdDdVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/ChungCu/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1bmdDdVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/ChungCu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2h1bmdDdVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/CuDan/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VEYW5cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/CuDan/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VEYW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/CuDan/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VEYW5cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/CuDan/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VEYW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/CuDan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VEYW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/DichVu/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljaFZ1XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/DichVu/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljaFZ1XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/DichVu/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljaFZ1XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/DichVu/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljaFZ1XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/DichVu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGljaFZ1XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/HoaDonDichVu/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uRGljaFZ1XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/HoaDonDichVu/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uRGljaFZ1XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/HoaDonDichVu/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uRGljaFZ1XERldGFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/HoaDonDichVu/Duyet.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uRGljaFZ1XER1eWV0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/HoaDonDichVu/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uRGljaFZ1XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/HoaDonDichVu/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9hRG9uRGljaFZ1XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/NguoiDung/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmd1b2lEdW5nXENoYW5nZVBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/NguoiDung/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmd1b2lEdW5nXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/NguoiDung/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmd1b2lEdW5nXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/NguoiDung/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmd1b2lEdW5nXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/NguoiDung/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmd1b2lEdW5nXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/NguoiDung/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmd1b2lEdW5nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/PhanAnh/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhbkFuaFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/PhanAnh/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhbkFuaFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/PhanAnh/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhbkFuaFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/PhanAnh/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhbkFuaFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/PhanAnh/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhbkFuaFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/PhanAnh/Reply.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhbkFuaFxSZXBseS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/Shared/Components/Weather/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcV2VhdGhlclxEZWZhdWx0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/Shared/ThongTinCaNhan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFRob25nVGluQ2FOaGFuXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/Shared/_ChatBox.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9DaGF0Qm94LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/ThongTinCaNhan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGhvbmdUaW5DYU5oYW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/TinTuc/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGluVHVjXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/TinTuc/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGluVHVjXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/TinTuc/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGluVHVjXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/TinTuc/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGluVHVjXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/TinTuc/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGluVHVjXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/duong/Downloads/PHQ-TECH-main/PHQ-TECH-main/APT/APT/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-53yhgsd8d2

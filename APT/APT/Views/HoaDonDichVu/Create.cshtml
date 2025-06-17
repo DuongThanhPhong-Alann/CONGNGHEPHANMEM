@@ -1,0 +1,111 @@
+﻿@model QLCCCC.Models.HoaDonDichVu
+<style>
+    .edit-apartment-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<div class="edit-apartment-container">
+@{
+    ViewData["Title"] = "Tạo Hóa Đơn Dịch Vụ";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="ID_ChungCu">Chung Cư</label>
+        <select class="form-control" id="ID_ChungCu" name="ID_ChungCu" required>
+            <option value="">-- Chọn Chung Cư --</option>
+            @foreach (var chungCu in ViewBag.ChungCus as SelectList)
+            {
+                <option value="@chungCu.Value">@chungCu.Text</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="ID_CanHo">Căn Hộ</label>
+        <select class="form-control" id="ID_CanHo" name="ID_CanHo" required>
+            <option value="">Vui lòng chọn chung cư trước</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="ID_DichVu">Dịch Vụ</label>
+        <select multiple class="form-control" id="ID_DichVu" name="selectedDichVu" required>
+            @foreach (var dichVu in ViewBag.DichVus)
+            {
+                <option value="@dichVu.ID">@dichVu.TenDichVu - @dichVu.Gia VNĐ</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="Gia">Giá</label>
+        <input type="number" class="form-control" id="Gia" name="Gia" required readonly />
+    </div>
+
+    <div class="form-group">
+        <label for="NgayLap">Ngày Lập</label>
+        <input type="date" class="form-control" id="NgayLap" name="NgayLap" required value="@DateTime.Now.ToString("yyyy-MM-dd")" />
+    </div>
+
+    <div class="form-group">
+        <label for="TrangThai">Trạng Thái</label>
+        <select class="form-control" id="TrangThai" name="TrangThai" required>
+            <option value="Chưa thanh toán">Chưa thanh toán</option>
+            <option value="Đã thanh toán">Đã thanh toán</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Tạo Hóa Đơn</button>
+</form>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Load danh sách căn hộ khi chọn chung cư
+        $('#ID_ChungCu').change(function () {
+            var chungCuId = $(this).val();
+
+            if (chungCuId) {
+                $.ajax({
+                    url: '/HoaDonDichVu/GetCanHoByChungCu',
+                    type: 'GET',
+                    data: { chungCuId: chungCuId },
+                    dataType: 'json',
+                    success: function (data) {
+                        $('#ID_CanHo').empty().append('<option value="">-- Chọn Căn Hộ --</option>');
+                        $.each(data, function (index, item) {
+                            $('#ID_CanHo').append('<option value="' + item.id + '">' + item.maCan + '</option>');
+                        });
+                    },
+                    error: function () {
+                        $('#ID_CanHo').empty().append('<option value="">Lỗi khi tải dữ liệu</option>');
+                    }
+                });
+            } else {
+                $('#ID_CanHo').empty().append('<option value="">Vui lòng chọn chung cư trước</option>');
+            }
+        });
+
+        // Tính tổng giá khi chọn dịch vụ
+        $('#ID_DichVu').change(function () {
+            var totalPrice = 0;
+            $('#ID_DichVu option:selected').each(function () {
+                var priceText = $(this).text().split('-')[1]?.trim();
+                if (priceText) {
+                    var price = parseFloat(priceText.replace(' VNĐ', '').replace(/\D/g, '')) || 0;
+                    totalPrice += price;
+                }
+            });
+            $('#Gia').val(totalPrice);
+        });
+    });
+</script>
+</div>

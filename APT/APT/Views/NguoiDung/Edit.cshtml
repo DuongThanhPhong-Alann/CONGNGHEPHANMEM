@@ -1,0 +1,57 @@
+﻿@model QLCCCC.Models.NguoiDung
+<style>
+    .edit-apartment-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<div class="edit-apartment-container">
+<h2>Edit User</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" name="ID" value="@Model.ID" />
+    <div class="form-group">
+        <label for="HoTen">Ho Ten</label>
+        <input type="text" id="HoTen" name="HoTen" class="form-control" value="@Model.HoTen" required />
+    </div>
+    <div class="form-group">
+        <label for="SoDienThoai">So Dien Thoai</label>
+        <input type="text" id="SoDienThoai" name="SoDienThoai" class="form-control" value="@Model.SoDienThoai" required />
+    </div>
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" id="Email" name="Email" class="form-control" value="@Model.Email" />
+    </div>
+    <div class="form-group">
+        <label for="MatKhau">Mat Khau</label>
+        <input type="password" id="MatKhau" name="MatKhau" class="form-control" value="@Model.MatKhau" required />
+    </div>
+    <div class="form-group">
+        <label for="LoaiNguoiDung">Loại Người Dùng</label>
+        @if (ViewBag.IsBanQuanLy)
+        {
+            <input type="text" class="form-control" value="@Model.LoaiNguoiDung" disabled />
+            <input type="hidden" name="LoaiNguoiDung" value="@Model.LoaiNguoiDung" />
+        }
+        else
+        {
+            <select id="LoaiNguoiDung" name="LoaiNguoiDung" class="form-control" required>
+                <option value="">-- Chọn loại người dùng --</option>
+                @foreach (var item in ViewBag.LoaiNguoiDungList)
+                {
+                    <option value="@item.Value" selected="@(item.Value == Model.LoaiNguoiDung)">@item.Text</option>
+                }
+            </select>
+        }
+        @if (ViewData.ModelState["LoaiNguoiDung"]?.Errors.Any() == true)
+        {
+            <span class="text-danger">@ViewData.ModelState["LoaiNguoiDung"].Errors.First().ErrorMessage</span>
+        }
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>
+</div>

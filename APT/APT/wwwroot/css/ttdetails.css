@@ -1,0 +1,97 @@
+﻿<style >
+body {
+    background-color: #e9f1f9;
+    font-family: 'Arial', sans-serif;
+    color: #34495e;
+}
+
+.container {
+    margin-top: 30px;
+    max-width: 900px;
+}
+
+.news-container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: left; /* Căn trái */
+}
+
+.news-meta {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: left; /* Căn trái */
+}
+
+    .news-meta strong {
+        color: #2980b9;
+        font-weight: 600;
+    }
+
+.news-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+    .news-image img {
+        width: 100%;
+        max-width: 900px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+        .news-image img:hover {
+            transform: scale(1.05);
+        }
+
+    .news-image span {
+        font-size: 1rem;
+        color: #2980b9;
+        font-style: italic;
+    }
+
+.news-content {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    padding: 15px;
+    background-color: #f4f9fc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: left; /* Căn trái */
+}
+
+.action-buttons {
+    text-align: left; /* Căn trái */
+}
+
+.btn-custom {
+    padding: 10px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+    .btn-secondary:hover {
+        background-color: #3498db;
+        border-color: #3498db;
+    }
+
+</style >

@@ -1,0 +1,120 @@
+﻿@model QLCCCC.Models.CuDan
+<style>
+    .edit-apartment-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<div class="edit-apartment-container">
+    <h2>Thêm Cư Dân</h2>
+
+    <form asp-action="Create" method="post">
+        <!-- Dropdown Chung Cư -->
+        <div class="form-group">
+            <label for="ID_ChungCu">Chung Cư</label>
+            <select class="form-control" id="ID_ChungCu" name="ID_ChungCu" required>
+                <option value="">-- Chọn Chung Cư --</option>
+                @foreach (var item in ViewBag.ChungCuList as List<SelectListItem> ?? new List<SelectListItem>())
+                {
+                    <option value="@item.Value">@item.Text</option>
+                }
+            </select>
+            @if ((ViewBag.ChungCuList as List<SelectListItem>)?.Any() != true)
+            {
+                <small class="text-danger">Không có chung cư nào được tìm thấy.</small>
+            }
+        </div>
+
+        <!-- Dropdown ID Người Dùng -->
+        <div class="form-group">
+            <label for="ID_NguoiDung">ID Người Dùng</label>
+            <select class="form-control" id="ID_NguoiDung" name="ID_NguoiDung" required>
+                <option value="">-- Chọn ID Người Dùng --</option>
+                @foreach (var item in ViewBag.NguoiDungList as List<SelectListItem> ?? new List<SelectListItem>())
+                {
+                    <option value="@item.Value">@item.Text</option>
+                }
+            </select>
+            @if ((ViewBag.NguoiDungList as List<SelectListItem>)?.Any() != true)
+            {
+                <small class="text-danger">Không có người dùng nào được tìm thấy.</small>
+            }
+        </div>
+
+        <!-- Hiển thị tên người dùng -->
+        <div class="form-group">
+            <label>Tên Người Dùng</label>
+            <input type="text" class="form-control" id="HoTen" readonly placeholder="Tên sẽ hiển thị sau khi chọn ID" />
+        </div>
+
+        <!-- Dropdown Căn Hộ -->
+        <div class="form-group">
+            <label for="ID_CanHo">Căn Hộ</label>
+            <select class="form-control" id="ID_CanHo" name="ID_CanHo" required>
+                <option value="">-- Vui lòng chọn Chung Cư trước --</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Thêm Cư Dân</button>
+    </form>
+
+    <!-- Script để tải danh sách căn hộ và tên người dùng -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Xử lý khi chọn chung cư
+            $('#ID_ChungCu').change(function () {
+                var chungCuId = $(this).val();
+                $('#ID_CanHo').empty().append('<option value="">-- Chọn Căn Hộ --</option>');
+                if (chungCuId) {
+                    $.ajax({
+                        url: '/CuDan/GetCanHoByChungCu',
+                        type: 'GET',
+                        data: { chungCuId: chungCuId },
+                        dataType: 'json',
+                        success: function (data) {
+                            if (data && data.length > 0) {
+                                $.each(data, function (index, item) {
+                                    $('#ID_CanHo').append('<option value="' + item.id + '">' + item.maCan + '</option>');
+                                });
+                            } else {
+                                $('#ID_CanHo').append('<option value="">Không có căn hộ nào</option>');
+                            }
+                        },
+                        error: function () {
+                            $('#ID_CanHo').empty().append('<option value="">Lỗi khi tải dữ liệu căn hộ</option>');
+                        }
+                    });
+                }
+            });
+
+            // Xử lý khi chọn ID_NguoiDung
+            $('#ID_NguoiDung').change(function () {
+                var nguoiDungId = $(this).val();
+                $('#HoTen').val('');
+                if (nguoiDungId) {
+                    $.ajax({
+                        url: '/CuDan/GetNguoiDungById',
+                        type: 'GET',
+                        data: { nguoiDungId: nguoiDungId },
+                        dataType: 'json',
+                        success: function (data) {
+                            if (data && data.hoTen) {
+                                $('#HoTen').val(data.hoTen);
+                            } else {
+                                $('#HoTen').val('Không tìm thấy tên người dùng');
+                            }
+                        },
+                        error: function () {
+                            $('#HoTen').val('Lỗi khi tải tên người dùng');
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+</div>

@@ -1,0 +1,56 @@
+﻿@model IEnumerable<QLCCCC.Models.NguoiDung>
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh Sách Người Dùng - QLCCCC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/ndindex.css" asp-append-version="true" />
+   
+</head>
+<body>
+    <div class="container">
+        <h2 class="header-title">Danh Sách Người Dùng</h2>
+
+        <div class="table-container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Mã Cư Dân</th>
+                        <th>Họ Tên</th>
+                        <th>Số Điện Thoại</th>
+                        <th>Email</th>
+                        <th>Loại Người Dùng</th>
+                        <th>Hành Động</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @(item.CuDan != null ? item.CuDan.ID.ToString() : "Không phải cư dân")
+                            </td>
+                            <td>@item.HoTen</td>
+                            <td>@item.SoDienThoai</td>
+                            <td>@item.Email</td>
+                            <td>@item.LoaiNguoiDung</td>
+                            <td class="action-links">
+                                <a href="@Url.Action("Edit", new { id = item.ID })" class="edit">Chỉnh sửa</a> |
+                                <a href="@Url.Action("Delete", new { id = item.ID })" class="delete">Xóa</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <a href="@Url.Action("Create")" class="btn-create">Thêm mới</a>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

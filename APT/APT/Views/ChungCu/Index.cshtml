@@ -1,0 +1,115 @@
+﻿@model IEnumerable<QLCCCC.Models.ChungCu>
+@using Microsoft.AspNetCore.Identity
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khám Phá Các Chung Cư - QLCCCC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/chungcuindex.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="container">
+        <!-- Container cho hình ảnh và tiêu đề -->
+        <div class="header-container">
+            <img src="~/images/ChungCu.jpg" alt="Hình ảnh đầu trang Chung Cư" class="header-image" />
+            <h2 class="header-title">Khám Phá Các Chung Cư</h2>
+        </div>
+
+        @if (User.IsInRole("Ban quản lý"))
+        {
+            <div class="table-container">
+                <a asp-action="Create" class="btn btn-primary">Thêm Mới Chung Cư</a>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Tên</th>
+                            <th>Địa Chỉ</th>
+                            <th>Chủ Đầu Tư</th>
+                            <th>Năm Xây Dựng</th>
+                            <th>Số Tầng</th>
+                            <th>Mô Tả</th>
+                            <th>Hình Ảnh</th>
+                            <th>Hành Động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var chungCu in Model)
+                        {
+                            <tr>
+                                <td>@chungCu.Ten</td>
+                                <td>@chungCu.DiaChi</td>
+                                <td>@chungCu.ChuDauTu</td>
+                                <td>@chungCu.NamXayDung</td>
+                                <td>@chungCu.SoTang</td>
+                                <td>
+                                    @{
+                                        var shortMoTa = (chungCu.MoTa != null && chungCu.MoTa.Length > 100)
+                                        ? chungCu.MoTa.Substring(0, 100) + "..."
+                                        : chungCu.MoTa ?? "Không có mô tả";
+                                    }
+                                    @shortMoTa
+                                </td>
+                                <td>
+                                    @if (chungCu.HinhAnhChungCus != null && chungCu.HinhAnhChungCus.Any())
+                                    {
+                                        foreach (var hinhAnh in chungCu.HinhAnhChungCus)
+                                        {
+                                            <img src="@hinhAnh.DuongDan" alt="Hình ảnh @chungCu.Ten" style="width: 100px; height: auto;" />
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <span>Không có hình ảnh</span>
+                                    }
+                                </td>
+                                <td>
+                                    <a asp-action="Details" asp-route-id="@chungCu.ID" class="btn btn-info btn-sm">Chi tiết</a>
+                                    <a asp-action="Edit" asp-route-id="@chungCu.ID" class="btn btn-warning btn-sm">Chỉnh sửa</a>
+                                    <a asp-action="Delete" asp-route-id="@chungCu.ID" class="btn btn-danger btn-sm">Xóa</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+
+        <!-- Các ô vuông hiển thị thông tin với hình ảnh làm nền -->
+        <div class="info-boxes">
+            @foreach (var chungCu in Model)
+            {
+                <div class="col-md-4">
+                    <a href="@Url.Action("Details", "ChungCu", new { id = chungCu.ID })" class="info-box">
+                        @if (chungCu.HinhAnhChungCus != null && chungCu.HinhAnhChungCus.Any())
+                        {
+                            <img src="@chungCu.HinhAnhChungCus.First().DuongDan" alt="Hình ảnh @chungCu.Ten" class="info-box-background" />
+                        }
+                        else
+                        {
+                            <img src="~/images/default-image.jpg" alt="Hình ảnh mặc định" class="info-box-background" />
+                        }
+                        <div class="info-box-content">
+                            <div>
+                                <h5>@chungCu.Ten</h5>
+                                <p><strong>Chủ Đầu Tư:</strong> @chungCu.ChuDauTu</p>
+                                <p><strong>Năm Xây Dựng:</strong> @chungCu.NamXayDung</p>
+                            </div>
+                            <div>
+                                <p><strong>Số Tầng:</strong> @chungCu.SoTang</p>
+                                <p><strong>Địa Chỉ:</strong> @chungCu.DiaChi</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

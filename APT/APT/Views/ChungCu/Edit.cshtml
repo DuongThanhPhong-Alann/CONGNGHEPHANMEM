@@ -1,0 +1,76 @@
+﻿@model QLCCCC.Models.ChungCu
+<style>
+    .edit-apartment-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+</style>
+<div class="edit-apartment-container">
+    <h1>Sửa Chung Cư</h1>
+
+    <form asp-action="Edit" enctype="multipart/form-data">
+        <input type="hidden" asp-for="ID" />
+
+        <div class="form-group">
+            <label asp-for="Ten" class="control-label"></label>
+            <input asp-for="Ten" class="form-control" />
+            <span asp-validation-for="Ten" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="DiaChi" class="control-label"></label>
+            <input asp-for="DiaChi" class="form-control" />
+            <span asp-validation-for="DiaChi" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ChuDauTu" class="control-label"></label>
+            <input asp-for="ChuDauTu" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="NamXayDung" class="control-label"></label>
+            <input asp-for="NamXayDung" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="SoTang" class="control-label"></label>
+            <input asp-for="SoTang" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <label asp-for="MoTa" class="control-label"></label>
+            <textarea asp-for="MoTa" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Hình Ảnh Hiện Tại</label>
+            @if (Model.HinhAnhChungCus != null && Model.HinhAnhChungCus.Any())
+            {
+                <img src="@Model.HinhAnhChungCus.First().DuongDan" alt="Hình ảnh @Model.Ten" style="max-width: 200px;" />
+            }
+            else
+            {
+                <p>Chưa có hình ảnh nào.</p>
+            }
+        </div>
+
+        <div class="form-group">
+            <label class="control-label">Thay Hình Ảnh</label>
+            <input type="file" name="hinhAnh" class="form-control" />
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Lưu" class="btn btn-primary" /> |
+            <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+        </div>
+    </form>
+
+    @section Scripts {
+        <partial name="_ValidationScriptsPartial" />
+    }
+</div>

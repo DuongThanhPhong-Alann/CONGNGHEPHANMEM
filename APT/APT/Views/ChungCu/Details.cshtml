@@ -1,0 +1,64 @@
+﻿@model QLCCCC.Models.ChungCu
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi Tiết Chung Cư - QLCCCC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/chungcudetails.css" asp-append-version="true" />
+   
+</head>
+<body>
+    <div class="container">
+        <div class="apartment-name">@Model.Ten</div>
+
+        <table class="info-table">
+            <tr>
+                <th>Địa Chỉ:</th>
+                <td>@Model.DiaChi</td>
+            </tr>
+            <tr>
+                <th>Chủ Đầu Tư:</th>
+                <td>@Model.ChuDauTu</td>
+            </tr>
+            <tr>
+                <th>Năm Xây Dựng:</th>
+                <td>@Model.NamXayDung</td>
+            </tr>
+            <tr>
+                <th>Số Tầng:</th>
+                <td>@Model.SoTang</td>
+            </tr>
+        </table>
+
+        <div>
+            @if (Model.HinhAnhChungCus != null && Model.HinhAnhChungCus.Any())
+            {
+                <div class="image-gallery">
+                    @foreach (var hinhAnh in Model.HinhAnhChungCus)
+                    {
+                        <img src="@hinhAnh.DuongDan" alt="Hình ảnh @Model.Ten" />
+                    }
+                </div>
+            }
+            else
+            {
+                <span>Không có hình ảnh</span>
+            }
+        </div>
+    </div>
+
+        <div style="margin-top: 20px;">
+            <strong style="color: #5d4037;">Mô tả:</strong> <span style="color: #8d5524;">@Model.MoTa</span>
+        </div>
+
+        <a class="back-link" asp-action="Index">Quay lại danh sách</a>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

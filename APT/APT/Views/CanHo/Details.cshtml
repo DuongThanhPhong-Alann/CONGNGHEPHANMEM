@@ -1,0 +1,216 @@
+﻿@model QLCCCC.Models.CanHo
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chi Tiết Căn Hộ - QLCCCC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/canhodetails.css" asp-append-version="true" />
+</head>
+<body>
+    <!-- Logo toàn màn hình độc lập -->
+    <div id="fullscreen-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/vi/8/81/Logo_Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_C%C3%B4ng_ngh%E1%BB%87_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh.png?20240225145406"
+             alt="HUTECH Logo"
+             width="50"
+             height="50"
+             style="opacity: 0.8;">
+    </div>
+
+    <div class="container">
+        <div class="image-gallery">
+            @if (Model.HinhAnhCanHos != null && Model.HinhAnhCanHos.Any())
+            {
+                var hinhAnhList = Model.HinhAnhCanHos.ToList();
+                @for (int i = 0; i < hinhAnhList.Count; i++)
+                {
+                    <div class="image-wrapper">
+                        <img src="@hinhAnhList[i].DuongDan" alt="Hình ảnh căn hộ" />
+                    </div>
+                }
+            }
+            else
+            {
+                <span>Không có hình ảnh</span>
+            }
+        </div>
+
+        <table class="info-table">
+            <tr>
+                <th>Mã Căn:</th>
+                <td>@Model.MaCan</td>
+            </tr>
+            <tr>
+                <th>Chung Cư:</th>
+                <td>@Model.ChungCu?.Ten</td>
+            </tr>
+            <tr>
+                <th>Diện Tích:</th>
+                <td>@Model.DienTich m²</td>
+            </tr>
+            <tr>
+                <th>Số Phòng:</th>
+                <td>@Model.SoPhong</td>
+            </tr>
+            <tr>
+                <th>Giá:</th>
+                <td>@Model.Gia.ToString("C0", new System.Globalization.CultureInfo("vi-VN"))</td>
+            </tr>
+            <tr>
+                <th>Trạng Thái:</th>
+                <td>@Model.TrangThai</td>
+            </tr>
+        </table>
+
+        @if (!string.IsNullOrEmpty(Model.MoTa))
+        {
+            var moTaLines = (Model.MoTa ?? "").Split(new[] { "\n", "\r\n" }, StringSplitOptions.RemoveEmptyEntries).ToList();
+            <div class="iframe-gallery">
+                @if (Model.URLs != null && Model.URLs.Any())
+                {
+                    @for (int i = 0; i < Model.URLs.Count; i++)
+                    {
+                        @if (i < moTaLines.Count)
+                        {
+                            <div class="description-line">
+                                @moTaLines[i]
+                            </div>
+                        }
+                        <div class="iframe-wrapper" id="iframe-container-@i">
+                            <iframe src="@Model.URLs[i]" allowfullscreen id="momento-iframe-@i"></iframe>
+                            <div class="logo-overlay">
+                                <img src="https://upload.wikimedia.org/wikipedia/vi/8/81/Logo_Tr%C6%B0%E1%BB%9Dng_%C4%90%E1%BA%A1i_h%E1%BB%8Dc_C%C3%B4ng_ngh%E1%BB%87_Th%C3%A0nh_ph%E1%BB%91_H%E1%BB%93_Ch%C3%AD_Minh.png?20240225145406"
+                                     alt="HUTECH Logo"
+                                     width="50"
+                                     height="50"
+                                     style="opacity: 0.8;">
+                            </div>
+                           
+                        </div>
+                    }
+                    @if (moTaLines.Count > Model.URLs.Count)
+                    {
+                        @for (int i = Model.URLs.Count; i < moTaLines.Count; i++)
+                        {
+                            <div class="description-line">
+                                @moTaLines[i]
+                            </div>
+                        }
+                    }
+                }
+                else
+                {
+                    @foreach (var line in moTaLines)
+                    {
+                        <div class="description-line">
+                            @line
+                        </div>
+                    }
+                }
+            </div>
+        }
+
+        <div class="back-link">
+            <a asp-action="Index" class="btn btn-secondary">Quay lại danh sách</a>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Khi trang đã tải xong
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lắng nghe sự kiện fullscreen với tất cả tiền tố trình duyệt
+            const fullscreenEvents = [
+                'fullscreenchange',
+                'webkitfullscreenchange',
+                'mozfullscreenchange',
+                'MSFullscreenChange'
+            ];
+
+            // Thêm các trình xử lý sự kiện
+            fullscreenEvents.forEach(function(eventType) {
+                document.addEventListener(eventType, handleFullscreenChange);
+            });
+
+            // Theo dõi các iframe Momento360
+            setupMomentoIframes();
+        });
+
+        // Hàm xử lý sự kiện thay đổi fullscreen
+        function handleFullscreenChange() {
+            // Lấy phần tử đang ở chế độ fullscreen (với tất cả tiền tố trình duyệt)
+            var fullscreenElement = document.fullscreenElement ||
+                                   document.webkitFullscreenElement ||
+                                   document.mozFullScreenElement ||
+                                   document.msFullscreenElement;
+
+            var fullscreenLogo = document.getElementById('fullscreen-logo');
+
+            // Nếu có phần tử đang ở chế độ fullscreen
+            if (fullscreenElement) {
+                // Hiển thị logo toàn màn hình
+                fullscreenLogo.style.display = 'block';
+            } else {
+                // Ẩn logo khi thoát fullscreen
+                fullscreenLogo.style.display = 'none';
+            }
+        }
+
+        // Hàm vào chế độ toàn màn hình an toàn
+        function openCustomFullscreen(containerId) {
+            var container = document.getElementById(containerId);
+
+            if (!container) {
+                console.log("Không tìm thấy container:", containerId);
+                return;
+            }
+
+            try {
+                // Cố gắng vào chế độ toàn màn hình với tất cả các tiền tố trình duyệt
+                if (container.requestFullscreen) {
+                    container.requestFullscreen();
+                } else if (container.mozRequestFullScreen) {
+                    container.mozRequestFullScreen();
+                } else if (container.webkitRequestFullscreen) {
+                    container.webkitRequestFullscreen();
+                } else if (container.msRequestFullscreen) {
+                    container.msRequestFullscreen();
+                }
+            } catch (e) {
+                console.log("Lỗi khi vào chế độ toàn màn hình:", e);
+            }
+        }
+
+        // Hàm thiết lập các iframe Momento360
+        function setupMomentoIframes() {
+            // Lấy tất cả các iframe Momento360
+            const momentoIframes = document.querySelectorAll('iframe[src*="momento360"]');
+
+            momentoIframes.forEach(function(iframe, index) {
+                // Đảm bảo mỗi iframe có ID duy nhất
+                if (!iframe.id) {
+                    iframe.id = 'momento-iframe-' + index;
+                }
+
+                // Theo dõi sự kiện khi iframe vào fullscreen trực tiếp
+                iframe.addEventListener('load', function() {
+                    try {
+                        // Cố gắng thêm trình lắng nghe sự kiện vào nội dung iframe
+                        // Lưu ý: Điều này có thể không hoạt động do hạn chế cross-origin
+                        iframe.contentWindow.addEventListener('fullscreenchange', function() {
+                            document.getElementById('fullscreen-logo').style.display = 'block';
+                        });
+                    } catch (e) {
+                        // Bỏ qua lỗi cross-origin - chúng ta sẽ dựa vào phương pháp dự phòng
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+</html>

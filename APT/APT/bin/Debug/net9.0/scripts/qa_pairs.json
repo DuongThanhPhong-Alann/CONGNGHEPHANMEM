@@ -1,0 +1,446 @@
+[
+  {
+    "question": "Chung cư",
+    "answer": "Intent: Hỏi menu chung cư"
+  },
+  {
+    "question": "Căn hộ",
+    "answer": "Intent: Hỏi menu căn hộ"
+  },
+  {
+    "question": "Dịch vụ",
+    "answer": "Intent: Hỏi menu dịch vụ"
+  },
+  {
+    "question": "Tin tức",
+    "answer": "Intent: Hỏi menu tin tức"
+  },
+  {
+    "question": "Tổng số chung cư?",
+    "answer": "Intent: Hỏi tổng số chung cư"
+  },
+  {
+    "question": "Danh sách chung cư",
+    "answer": "Intent: Hỏi danh sách chung cư"
+  },
+  {
+    "question": "Xem chung cư Hoàng Anh Gold House",
+    "answer": "Intent: Xem thông tin chung cư Hoàng Anh Gold House"
+  },
+  {
+    "question": "Xem chung cư Sunrise City",
+    "answer": "Intent: Xem thông tin chung cư Sunrise City"
+  },
+  {
+    "question": "Xem chung cư Vinhome Central Park",
+    "answer": "Intent: Xem thông tin chung cư Vinhome Central Park"
+  },
+  {
+    "question": "Xem chung cư Eco Green Saigon",
+    "answer": "Intent: Xem thông tin chung cư Eco Green Saigon"
+  },
+  {
+    "question": "Xem chung cư The Vista An Phú",
+    "answer": "Intent: Xem thông tin chung cư The Vista An Phú"
+  },
+  {
+    "question": "Xem chung cư City Garden",
+    "answer": "Intent: Xem thông tin chung cư City Garden"
+  },
+  {
+    "question": "Xem chung cư The Estella",
+    "answer": "Intent: Xem thông tin chung cư The Estella"
+  },
+  {
+    "question": "Xem chung cư Richstar",
+    "answer": "Intent: Xem thông tin chung cư Richstar"
+  },
+  {
+    "question": "Xem chung cư Saigon Pearl",
+    "answer": "Intent: Xem thông tin chung cư Saigon Pearl"
+  },
+  {
+    "question": "Xem chung cư The Manor",
+    "answer": "Intent: Xem thông tin chung cư The Manor"
+  },
+  {
+    "question": "Tổng số căn hộ của chung cư Hoàng Anh Gold House?",
+    "answer": "Intent: Hỏi tổng số căn hộ chung cư Hoàng Anh Gold House"
+  },
+  {
+    "question": "Danh sách căn hộ của chung cư Hoàng Anh Gold House?",
+    "answer": "Intent: Hỏi danh sách căn hộ chung cư Hoàng Anh Gold House"
+  },
+  {
+    "question": "Tổng số căn hộ của chung cư Sunrise City?",
+    "answer": "Intent: Hỏi tổng số căn hộ chung cư Sunrise City"
+  },
+  {
+    "question": "Danh sách căn hộ của chung cư Sunrise City?",
+    "answer": "Intent: Hỏi danh sách căn hộ chung cư Sunrise City"
+  },
+  {
+    "question": "Tổng số căn hộ của chung cư Vinhome Central Park?",
+    "answer": "Intent: Hỏi tổng số căn hộ chung cư Vinhome Central Park"
+  },
+  {
+    "question": "Danh sách căn hộ của chung cư Vinhome Central Park?",
+    "answer": "Intent: Hỏi danh sách căn hộ chung cư Vinhome Central Park"
+  },
+  {
+    "question": "Tổng số căn hộ của chung cư Eco Green Saigon?",
+    "answer": "Intent: Hỏi tổng số căn hộ chung cư Eco Green Saigon"
+  },
+  {
+    "question": "Danh sách căn hộ của chung cư Eco Green Saigon?",
+    "answer": "Intent: Hỏi danh sách căn hộ chung cư Eco Green Saigon"
+  },
+  {
+    "question": "Tổng số căn hộ của chung cư The Vista An Phú?",
+    "answer": "Intent: Hỏi tổng số căn hộ chung cư The Vista An Phú"
+  },
+  {
+    "question": "Danh sách căn hộ của chung cư The Vista An Phú?",
+    "answer": "Intent: Hỏi danh sách căn hộ chung cư The Vista An Phú"
+  },
+  {
+    "question": "Tổng số căn hộ của chung cư City Garden?",
+    "answer": "Intent: Hỏi tổng số căn hộ chung cư City Garden"
+  },
+  {
+    "question": "Danh sách căn hộ của chung cư City Garden?",
+    "answer": "Intent: Hỏi danh sách căn hộ chung cư City Garden"
+  },
+  {
+    "question": "Tổng số căn hộ của chung cư The Estella?",
+    "answer": "Intent: Hỏi tổng số căn hộ chung cư The Estella"
+  },
+  {
+    "question": "Danh sách căn hộ của chung cư The Estella?",
+    "answer": "Intent: Hỏi danh sách căn hộ chung cư The Estella"
+  },
+  {
+    "question": "Tổng số căn hộ của chung cư Richstar?",
+    "answer": "Intent: Hỏi tổng số căn hộ chung cư Richstar"
+  },
+  {
+    "question": "Danh sách căn hộ của chung cư Richstar?",
+    "answer": "Intent: Hỏi danh sách căn hộ chung cư Richstar"
+  },
+  {
+    "question": "Tổng số căn hộ của chung cư Saigon Pearl?",
+    "answer": "Intent: Hỏi tổng số căn hộ chung cư Saigon Pearl"
+  },
+  {
+    "question": "Danh sách căn hộ của chung cư Saigon Pearl?",
+    "answer": "Intent: Hỏi danh sách căn hộ chung cư Saigon Pearl"
+  },
+  {
+    "question": "Tổng số căn hộ của chung cư The Manor?",
+    "answer": "Intent: Hỏi tổng số căn hộ chung cư The Manor"
+  },
+  {
+    "question": "Danh sách căn hộ của chung cư The Manor?",
+    "answer": "Intent: Hỏi danh sách căn hộ chung cư The Manor"
+  },
+  {
+    "question": "Xem căn hộ 1 thuộc chung cư Hoàng Anh Gold House",
+    "answer": "Intent: Xem thông tin căn hộ 1"
+  },
+  {
+    "question": "Xem căn hộ 2 thuộc chung cư Hoàng Anh Gold House",
+    "answer": "Intent: Xem thông tin căn hộ 2"
+  },
+  {
+    "question": "Xem căn hộ 3 thuộc chung cư Hoàng Anh Gold House",
+    "answer": "Intent: Xem thông tin căn hộ 3"
+  },
+  {
+    "question": "Xem căn hộ 4 thuộc chung cư Hoàng Anh Gold House",
+    "answer": "Intent: Xem thông tin căn hộ 4"
+  },
+  {
+    "question": "Xem căn hộ 5 thuộc chung cư Hoàng Anh Gold House",
+    "answer": "Intent: Xem thông tin căn hộ 5"
+  },
+  {
+    "question": "Xem căn hộ 6 thuộc chung cư Hoàng Anh Gold House",
+    "answer": "Intent: Xem thông tin căn hộ 6"
+  },
+  {
+    "question": "Xem căn hộ 7 thuộc chung cư Hoàng Anh Gold House",
+    "answer": "Intent: Xem thông tin căn hộ 7"
+  },
+  {
+    "question": "Xem căn hộ 8 thuộc chung cư Hoàng Anh Gold House",
+    "answer": "Intent: Xem thông tin căn hộ 8"
+  },
+  {
+    "question": "Xem căn hộ 9 thuộc chung cư Hoàng Anh Gold House",
+    "answer": "Intent: Xem thông tin căn hộ 9"
+  },
+  {
+    "question": "Xem căn hộ 10 thuộc chung cư Hoàng Anh Gold House",
+    "answer": "Intent: Xem thông tin căn hộ 10"
+  },
+  {
+    "question": "Xem căn hộ 1 thuộc chung cư Sunrise City",
+    "answer": "Intent: Xem thông tin căn hộ 1"
+  },
+  {
+    "question": "Xem căn hộ 2 thuộc chung cư Sunrise City",
+    "answer": "Intent: Xem thông tin căn hộ 2"
+  },
+  {
+    "question": "Xem căn hộ 3 thuộc chung cư Sunrise City",
+    "answer": "Intent: Xem thông tin căn hộ 3"
+  },
+  {
+    "question": "Xem căn hộ 4 thuộc chung cư Sunrise City",
+    "answer": "Intent: Xem thông tin căn hộ 4"
+  },
+  {
+    "question": "Xem căn hộ 5 thuộc chung cư Sunrise City",
+    "answer": "Intent: Xem thông tin căn hộ 5"
+  },
+  {
+    "question": "Xem căn hộ 6 thuộc chung cư Sunrise City",
+    "answer": "Intent: Xem thông tin căn hộ 6"
+  },
+  {
+    "question": "Xem căn hộ 7 thuộc chung cư Sunrise City",
+    "answer": "Intent: Xem thông tin căn hộ 7"
+  },
+  {
+    "question": "Xem căn hộ 8 thuộc chung cư Sunrise City",
+    "answer": "Intent: Xem thông tin căn hộ 8"
+  },
+  {
+    "question": "Xem căn hộ 9 thuộc chung cư Sunrise City",
+    "answer": "Intent: Xem thông tin căn hộ 9"
+  },
+  {
+    "question": "Xem căn hộ 10 thuộc chung cư Sunrise City",
+    "answer": "Intent: Xem thông tin căn hộ 10"
+  },
+  {
+    "question": "Xem căn hộ 1 thuộc chung cư Vinhome Central Park",
+    "answer": "Intent: Xem thông tin căn hộ 1"
+  },
+  {
+    "question": "Xem căn hộ 2 thuộc chung cư Vinhome Central Park",
+    "answer": "Intent: Xem thông tin căn hộ 2"
+  },
+  {
+    "question": "Xem căn hộ 3 thuộc chung cư Vinhome Central Park",
+    "answer": "Intent: Xem thông tin căn hộ 3"
+  },
+  {
+    "question": "Xem căn hộ 4 thuộc chung cư Vinhome Central Park",
+    "answer": "Intent: Xem thông tin căn hộ 4"
+  },
+  {
+    "question": "Xem căn hộ 5 thuộc chung cư Vinhome Central Park",
+    "answer": "Intent: Xem thông tin căn hộ 5"
+  },
+  {
+    "question": "Xem căn hộ 1 thuộc chung cư Eco Green Saigon",
+    "answer": "Intent: Xem thông tin căn hộ 1"
+  },
+  {
+    "question": "Xem căn hộ 2 thuộc chung cư Eco Green Saigon",
+    "answer": "Intent: Xem thông tin căn hộ 2"
+  },
+  {
+    "question": "Xem căn hộ 3 thuộc chung cư Eco Green Saigon",
+    "answer": "Intent: Xem thông tin căn hộ 3"
+  },
+  {
+    "question": "Xem căn hộ 4 thuộc chung cư Eco Green Saigon",
+    "answer": "Intent: Xem thông tin căn hộ 4"
+  },
+  {
+    "question": "Xem căn hộ 5 thuộc chung cư Eco Green Saigon",
+    "answer": "Intent: Xem thông tin căn hộ 5"
+  },
+  {
+    "question": "Xem căn hộ 1 thuộc chung cư The Vista An Phú",
+    "answer": "Intent: Xem thông tin căn hộ 1"
+  },
+  {
+    "question": "Xem căn hộ 2 thuộc chung cư The Vista An Phú",
+    "answer": "Intent: Xem thông tin căn hộ 2"
+  },
+  {
+    "question": "Xem căn hộ 3 thuộc chung cư The Vista An Phú",
+    "answer": "Intent: Xem thông tin căn hộ 3"
+  },
+  {
+    "question": "Xem căn hộ 4 thuộc chung cư The Vista An Phú",
+    "answer": "Intent: Xem thông tin căn hộ 4"
+  },
+  {
+    "question": "Xem căn hộ 5 thuộc chung cư The Vista An Phú",
+    "answer": "Intent: Xem thông tin căn hộ 5"
+  },
+  {
+    "question": "Xem căn hộ 1 thuộc chung cư The Estella",
+    "answer": "Intent: Xem thông tin căn hộ 1"
+  },
+  {
+    "question": "Xem căn hộ 2 thuộc chung cư The Estella",
+    "answer": "Intent: Xem thông tin căn hộ 2"
+  },
+  {
+    "question": "Xem căn hộ 3 thuộc chung cư The Estella",
+    "answer": "Intent: Xem thông tin căn hộ 3"
+  },
+  {
+    "question": "Xem căn hộ 4 thuộc chung cư The Estella",
+    "answer": "Intent: Xem thông tin căn hộ 4"
+  },
+  {
+    "question": "Xem căn hộ 5 thuộc chung cư The Estella",
+    "answer": "Intent: Xem thông tin căn hộ 5"
+  },
+  {
+    "question": "Xem căn hộ 1 thuộc chung cư Richstar",
+    "answer": "Intent: Xem thông tin căn hộ 1"
+  },
+  {
+    "question": "Xem căn hộ 2 thuộc chung cư Richstar",
+    "answer": "Intent: Xem thông tin căn hộ 2"
+  },
+  {
+    "question": "Xem căn hộ 3 thuộc chung cư Richstar",
+    "answer": "Intent: Xem thông tin căn hộ 3"
+  },
+  {
+    "question": "Xem căn hộ 4 thuộc chung cư Richstar",
+    "answer": "Intent: Xem thông tin căn hộ 4"
+  },
+  {
+    "question": "Xem căn hộ 5 thuộc chung cư Richstar",
+    "answer": "Intent: Xem thông tin căn hộ 5"
+  },
+  {
+    "question": "Xem căn hộ 1 thuộc chung cư Saigon Pearl",
+    "answer": "Intent: Xem thông tin căn hộ 1"
+  },
+  {
+    "question": "Xem căn hộ 2 thuộc chung cư Saigon Pearl",
+    "answer": "Intent: Xem thông tin căn hộ 2"
+  },
+  {
+    "question": "Xem căn hộ 3 thuộc chung cư Saigon Pearl",
+    "answer": "Intent: Xem thông tin căn hộ 3"
+  },
+  {
+    "question": "Xem căn hộ 4 thuộc chung cư Saigon Pearl",
+    "answer": "Intent: Xem thông tin căn hộ 4"
+  },
+  {
+    "question": "Xem căn hộ 5 thuộc chung cư Saigon Pearl",
+    "answer": "Intent: Xem thông tin căn hộ 5"
+  },
+  {
+    "question": "Xem căn hộ 1 thuộc chung cư The Manor",
+    "answer": "Intent: Xem thông tin căn hộ 1"
+  },
+  {
+    "question": "Xem căn hộ 2 thuộc chung cư The Manor",
+    "answer": "Intent: Xem thông tin căn hộ 2"
+  },
+  {
+    "question": "Xem căn hộ 3 thuộc chung cư The Manor",
+    "answer": "Intent: Xem thông tin căn hộ 3"
+  },
+  {
+    "question": "Xem căn hộ 4 thuộc chung cư The Manor",
+    "answer": "Intent: Xem thông tin căn hộ 4"
+  },
+  {
+    "question": "Xem căn hộ 5 thuộc chung cư The Manor",
+    "answer": "Intent: Xem thông tin căn hộ 5"
+  },
+  {
+    "question": "Tổng số dịch vụ hiện có?",
+    "answer": "Intent: Hỏi tổng số dịch vụ"
+  },
+  {
+    "question": "Danh sách dịch vụ",
+    "answer": "Intent: Hỏi danh sách dịch vụ"
+  },
+  {
+    "question": "Xem dịch vụ D?ch v? s?a ch?a di?n nu?c trong can h?",
+    "answer": "Intent: Xem thông tin dịch vụ D?ch v? s?a ch?a di?n nu?c trong can h?"
+  },
+  {
+    "question": "Xem dịch vụ D?ch v? v? sinh can h? d?nh k?",
+    "answer": "Intent: Xem thông tin dịch vụ D?ch v? v? sinh can h? d?nh k?"
+  },
+  {
+    "question": "Xem dịch vụ D?ch v? l?p d?t và b?o trì di?u hòa",
+    "answer": "Intent: Xem thông tin dịch vụ D?ch v? l?p d?t và b?o trì di?u hòa"
+  },
+  {
+    "question": "Xem dịch vụ D?ch v? gi?t là và ?i d?",
+    "answer": "Intent: Xem thông tin dịch vụ D?ch v? gi?t là và ?i d?"
+  },
+  {
+    "question": "Xem dịch vụ D?ch v? cung c?p nu?c u?ng dóng bình",
+    "answer": "Intent: Xem thông tin dịch vụ D?ch v? cung c?p nu?c u?ng dóng bình"
+  },
+  {
+    "question": "Xem dịch vụ D?ch v? son và làm m?i tu?ng can h?",
+    "answer": "Intent: Xem thông tin dịch vụ D?ch v? son và làm m?i tu?ng can h?"
+  },
+  {
+    "question": "Xem dịch vụ D?ch v? ki?m tra và x? lý côn trùng",
+    "answer": "Intent: Xem thông tin dịch vụ D?ch v? ki?m tra và x? lý côn trùng"
+  },
+  {
+    "question": "Xem dịch vụ D?ch v? h? tr? chuy?n d? trong can h?",
+    "answer": "Intent: Xem thông tin dịch vụ D?ch v? h? tr? chuy?n d? trong can h?"
+  },
+  {
+    "question": "Xem dịch vụ D?ch v? l?p d?t và b?o trì h? th?ng dèn chi?u sáng",
+    "answer": "Intent: Xem thông tin dịch vụ D?ch v? l?p d?t và b?o trì h? th?ng dèn chi?u sáng"
+  },
+  {
+    "question": "Xem dịch vụ D?ch v? h? tr? l?p d?t n?i th?t",
+    "answer": "Intent: Xem thông tin dịch vụ D?ch v? h? tr? l?p d?t n?i th?t"
+  },
+  {
+    "question": "Tin tức mới nhất?",
+    "answer": "Intent: Hỏi tin tức mới nhất"
+  },
+  {
+    "question": "Hóa đơn của m@gmail.com?",
+    "answer": "Intent: Hỏi hóa đơn"
+  },
+  {
+    "question": "Hóa đơn chưa thanh toán của m@gmail.com?",
+    "answer": "Intent: Hỏi hóa đơn chưa thanh toán"
+  },
+  {
+    "question": "Phản ánh của m@gmail.com?",
+    "answer": "Intent: Hỏi phản ánh"
+  },
+  {
+    "question": "Phản ánh chưa xử lý của m@gmail.com?",
+    "answer": "Intent: Hỏi phản ánh chưa xử lý"
+  },
+  {
+    "question": "Tổng số cư dân?",
+    "answer": "Intent: Hỏi tổng số cư dân"
+  },
+  {
+    "question": "Tổng số hóa đơn chưa thanh toán?",
+    "answer": "Intent: Hỏi tổng số hóa đơn chưa thanh toán"
+  },
+  {
+    "question": "Tổng số phản ánh chưa xử lý?",
+    "answer": "Intent: Hỏi tổng số phản ánh chưa xử lý"
+  }
+]

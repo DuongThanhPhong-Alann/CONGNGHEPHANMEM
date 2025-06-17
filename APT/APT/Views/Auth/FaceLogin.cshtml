@@ -1,0 +1,51 @@
+﻿@{
+    ViewData["Title"] = "Đăng nhập bằng khuôn mặt";
+}
+<div class="login-form">
+    <h2>Đăng nhập bằng khuôn mặt</h2>
+
+    <video id="video" autoplay playsinline style="width: 100%; border-radius: 8px;"></video>
+    <canvas id="canvas" style="display: none;"></canvas>
+
+    <button class="btn btn-success" onclick="capture()">Chụp và đăng nhập</button>
+
+    <p class="register-link">
+        hoặc <a asp-action="Login">Đăng nhập thủ công</a>
+    </p>
+</div>
+
+@section Scripts {
+    <script>
+        const video = document.getElementById("video");
+        const canvas = document.getElementById("canvas");
+        const context = canvas.getContext("2d");
+
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(stream => {
+                video.srcObject = stream;
+            });
+
+        function capture() {
+            canvas.width = video.videoWidth;
+            canvas.height = video.videoHeight;
+            context.drawImage(video, 0, 0);
+
+            const dataUrl = canvas.toDataURL("image/jpeg");
+            fetch("/Auth/FaceLogin", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ imageBase64: dataUrl })
+            })
+            .then(response => {
+                if (response.redirected) {
+                    window.location.href = response.url;
+                } else {
+                    return response.text();
+                }
+            })
+            .then(data => {
+                if (data) alert(data);
+            });
+        }
+    </script>
+}

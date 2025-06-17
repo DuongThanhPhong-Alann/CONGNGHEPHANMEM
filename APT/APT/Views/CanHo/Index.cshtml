@@ -1,0 +1,147 @@
+﻿@model IEnumerable<QLCCCC.Models.CanHo>
+@using Microsoft.AspNetCore.Identity
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khám Phá Các Căn Hộ - QLCCCC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/canhoindex.css" asp-append-version="true" />
+
+</head>
+<body>
+    <div class="container">
+        <!-- Container cho hình ảnh và tiêu đề -->
+        <div class="header-container">
+            <img src="~/images/CanHo.jpg" alt="Hình ảnh đầu trang Căn Hộ" class="header-image" />
+            <h2 class="header-title">Khám Phá Các Căn Hộ</h2>
+        </div>
+
+        @if (User.IsInRole("Ban quản lý"))
+        {
+            <div class="table-container">
+                <a asp-action="Create" class="btn btn-primary mb-3">Thêm Mới Căn Hộ</a>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Mã Căn</th>
+                            <th>Chung Cư</th>
+                            <th>Diện Tích</th>
+                            <th>Số Phòng</th>
+                            <th>Giá</th>
+                            <th>Trạng Thái</th>
+                            <th>Mô Tả</th>
+                            <th>URLs</th>
+                            <th>Hình Ảnh</th>
+                            <th>Hành Động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var canHo in Model)
+                        {
+                            <tr>
+                                <td>@canHo.MaCan</td>
+                                <td>@canHo.ChungCu?.Ten</td>
+                                <td>@canHo.DienTich m²</td>
+                                <td>@canHo.SoPhong</td>
+                                <td>@canHo.Gia.ToString("C0", new System.Globalization.CultureInfo("vi-VN"))</td>
+                                <td>@canHo.TrangThai</td>   
+                                <td>
+                                    @{
+                                        var moTa = canHo.MoTa ?? "Không có";
+                                        var shortMoTa = moTa.Contains("\n") || moTa.Contains("\r\n")
+                                        ? moTa.Split(new[] { "\n", "\r\n" }, StringSplitOptions.None)[0] + "..."
+                                        : (moTa.Length > 100 ? moTa.Substring(0, 100) + "..." : moTa);
+                                    }
+                                    @shortMoTa
+                                </td>
+                                <td>
+                                    @if (canHo.URLs != null && canHo.URLs.Any())
+                                    {
+                                        var urlList = canHo.URLs.ToList();
+                                        var maxDisplayLength = 50; // Giới hạn độ dài hiển thị của mỗi URL
+                                        var maxUrlsToShow = 2; // Giới hạn số lượng URL hiển thị
+                                        var displayedUrls = urlList.Take(maxUrlsToShow).Select(url =>
+                                        {
+                                            var shortUrl = url.Contains("\n") || url.Contains("\r\n")
+                                                ? url.Split(new[] { "\n", "\r\n" }, StringSplitOptions.None)[0] + "..."
+                                                : (url.Length > maxDisplayLength ? url.Substring(0, maxDisplayLength) + "..." : url);
+                                            return shortUrl;
+                                        }).ToList();
+
+                                        <ul>
+                                            @foreach (var url in displayedUrls)
+                                            {
+                                                <li><a href="@url" target="_blank">@url</a></li>
+                                            }
+                                        </ul>
+
+                                        @if (urlList.Count > maxUrlsToShow)
+                                        {
+                                            <span>...</span>
+                                        }
+                                    }
+                                    else
+                                    {
+                                        <span>Không có URL</span>
+                                    }
+                                </td>
+                                <td>
+                                    @if (canHo.HinhAnhCanHos?.Any() == true)
+                                    {
+                                        <img src="@canHo.HinhAnhCanHos.First().DuongDan" alt="Ảnh căn hộ" style="width: 80px; height: auto; border-radius: 5px;" />
+                                    }
+                                    else
+                                    {
+                                        <span>Không có hình ảnh</span>
+                                    }
+                                </td>
+                                <td>
+                                    <a asp-action="Details" asp-route-id="@canHo.ID" class="btn btn-info btn-sm">Chi tiết</a>
+                                    <a asp-action="Edit" asp-route-id="@canHo.ID" class="btn btn-warning btn-sm">Sửa</a>
+                                    <a asp-action="Delete" asp-route-id="@canHo.ID" class="btn btn-danger btn-sm" onclick="return confirm('Bạn có chắc muốn xóa?');">Xóa</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+
+        <!-- Các ô vuông hiển thị thông tin với hình ảnh làm nền -->
+        <div class="info-boxes">
+            @foreach (var canHo in Model)
+            {
+                <a asp-action="Details" asp-route-id="@canHo.ID" class="info-box">
+                    @if (canHo.HinhAnhCanHos?.Any() == true)
+                    {
+                        <img src="@canHo.HinhAnhCanHos.First().DuongDan" alt="Hình ảnh @canHo.MaCan" class="info-box-background" />
+                    }
+                    else
+                    {
+                        <img src="~/images/default-house.jpg" alt="Hình ảnh mặc định" class="info-box-background" />
+                    }
+                    <div class="info-box-content">
+                        <div>
+                            <h5>@canHo.MaCan</h5>
+                            <p><strong>Chung Cư:</strong> @canHo.ChungCu?.Ten</p>
+                            <p><strong>Diện Tích:</strong> @canHo.DienTich m²</p>
+                        </div>
+                        <div>
+                            <p><strong>Số Phòng:</strong> @canHo.SoPhong</p>
+                            <p><strong>Giá:</strong> @canHo.Gia.ToString("C0", new System.Globalization.CultureInfo("vi-VN"))</p>
+                            <p><strong>Trạng Thái:</strong> @canHo.TrangThai</p>
+                        </div>
+                    </div>
+                </a>
+            }
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
